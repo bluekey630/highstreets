@@ -1,0 +1,50 @@
+<ion-header>
+
+  <ion-navbar color="white">
+    <ion-buttons end>
+      <button id="menu-button" ion-button menuToggle end></button>
+    </ion-buttons>
+    <ion-title>{{getLangText('title.references')}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <div class="nav-button-container">{{title}}</div>
+
+  <div class="page-num">{{ConvPageNum(getLangText('reference.paging.page-indicator'))}}</div>
+
+  <ion-row class="control-button-container">
+    <ion-col col-3>
+      <button ion-button tappable color="custom-button-color" (click)="onFirstButtonClick()">{{getLangText('reference.paging.first')}}</button>
+    </ion-col>
+    <ion-col col-3>
+      <button ion-button tappable color="custom-button-color" (click)="onPrevButtonClick()">{{getLangText('reference.paging.prev')}}</button>
+    </ion-col> 
+    <ion-col col-3>
+      <button ion-button tappable color="custom-button-color" (click)="onNextButtonClick()">{{getLangText('reference.paging.next')}}</button>
+    </ion-col>
+    <ion-col col-3>
+      <button ion-button tappable color="custom-button-color" (click)="onLastButtonClick()">{{getLangText('reference.paging.last')}}</button>
+    </ion-col>
+  </ion-row>
+
+  <ion-list inset>
+    <ion-item *ngFor="let item of curData">     
+      <ion-row >
+        <ion-col col-6 class="image-container" tappable (click)="onItemClicked(item.left)">
+          <img width="100%" [src]="item.left.overview_img"/>
+          <div class="item-title">{{item.left.title}}</div>
+          <div class="item-subtitle">{{ConvChar(item.left.subtitle)}}</div>           
+        </ion-col>
+          
+        <ion-col *ngIf="item.right" col-6 class="image-container" tappable (click)="onItemClicked(item.right)">
+          <img width="100%" [src]="item.right.overview_img"/>
+          <div class="item-title">{{item.right.title}}</div>
+          <div class="item-subtitle">{{ConvChar(item.right.subtitle)}}</div>
+        </ion-col>
+      </ion-row>
+    </ion-item> 
+  </ion-list>
+</ion-content>

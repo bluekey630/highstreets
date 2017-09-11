@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<lang>
+    <!-- Choose Country Splash -->
+    <label index="country.de">Deutschland</label>
+    <label index="country.ch">Schweiz</label>
+    <label index="splash.title">HighStreets</label>
+    <label index="splash.tagline"><![CDATA[Zahlen &amp; Fakten<br>Einzelhandelsimmobilien in Toplagen]]></label>
+    <!-- Ticker -->
+    <label index="ticker.numlinks">1</label>
+    <label index="ticker.link.1">services.html</label>
+    <label index="ticker.linktext.1"><![CDATA[Miet- und Kaufvertr&auml;ge &#45; Bewertung &#45; Research &amp; Consulting &#45; Shopping-Center Consulting &#45; Center-Management &#45; Projektentwicklung &#45; Expansionsberatung.]]></label>
+    <label index="ticker.link.external.1">0</label>
+    <!-- Page titles -->
+    <label index="title.cities">Städte</label>
+    <label index="title.iask">iAsk</label>
+    <label index="title.iask-help">iAsk Hilfe</label>
+    <label index="title.iask-info">iAsk Informationen</label>
+    <label index="title.references">Referenzen</label>
+    <label index="title.contact">Kontakt</label>
+    <label index="title.news">Presse</label>
+    <label index="title.sort">Städte sortieren</label>
+    <label index="title.country">Länder wählen</label>
+    <label index="title.filter">Städte filtern</label>
+    <label index="title.info">Leistungen</label>
+    <label index="title.infocentre">Info-Center</label>
+    <label index="title.services">Leistungen</label>
+    <label index="title.city-info">Begriffsdefinitionen</label>
+    <label index="title.street-info">Informationen</label>
+    <label index="title.streets"></label>
+    <label index="title.setup">Länderauswahl</label>
+    <label index="title.impressum">Impressum</label>
+    <label index="title.overview">Übersicht</label>
+    <label index="title.street-overview">Straßenübersicht</label>
+    <!-- Page subtitles (if any) -->
+    <label index="subtitle.iask">iAsk - Ihre mobile Immobilienanfrage</label>
+    <!-- City list filter text -->
+    <label index="filter.text">Stadt...</label>
+    <!-- Street list item(s) -->
+    <label index="listitem.map">Alle Straßen auf Karte zeigen</label>
+    <!-- Buttons -->
+    <label index="button.back">Zurück</label>
+    <label index="button.filter">Filter</label>
+    <label index="button.reset">ZURÜCKSETZEN</label>
+    <label index="button.reset-filter">ZURÜCKSETZEN</label>
+    <label index="button.sort">Sortieren</label>
+    <label index="button.country">Land</label>
+    <label index="button.finished">Fertig</label>
+    <label index="button.map">Besatz</label>
+    <label index="button.impressum">Impressum</label>
+    <label index="button.merits">Leistungen</label>
+    <label index="button.takepicture">Kamera</label>
+    <label index="button.fromfolder">Foto aus Bibliothek</label>
+    <!-- Navigation -->
+    <label index="nav.cities">Städte</label>
+    <label index="nav.iask">iAsk</label>
+    <label index="nav.references">Referenzen</label>
+    <label index="nav.contact">Kontakt</label>
+    <label index="nav.news">News</label>
+    <label index="nav.infocentre">Info</label>
+    <!-- Sorting options -->
+    <label index="option.sort.alpha">Alphabetisch</label>
+    <label index="option.sort.pop">Einwohner</label>
+    <label index="option.sort.popdev">Bevölkerungsentwicklung</label>
+    <label index="option.sort.ins">Soz.Vers.Beschäftigte</label>
+    <label index="option.sort.unemp">Arbeitslosenquote</label>
+    <label index="option.sort.purch">Einzelhandelkaufkraft</label>
+    <label index="option.sort.central">Einzelhandelszentralität</label>
+    <label index="option.sort.rentdem">Nachfragekoeffizient Vermietung</label>
+    <label index="option.sort.highrent">Höchstmieten</label>
+    <!-- Filter options -->
+    <label index="filter.pop">Einwohner</label>
+    <label index="filter.popdev">Bevölkerungsentwicklung</label>
+    <label index="filter.ins">Soz.Vers.Beschäftigte</label>
+    <label index="filter.unemp">Arbeitslosenquote</label>
+    <label index="filter.purch">Einzelhandelkaufkraft</label>
+    <label index="filter.central">Einzelhandelszentralität</label>
+    <!-- Reference titles -->
+    <label index="reference.num-categories">5</label>
+    <label index="reference.id.1">1</label>
+    <label index="reference.title.1">Vermietung</label>
+    <label index="reference.id.2">2</label>
+    <label index="reference.title.2">Investment</label>
+    <label index="reference.id.3">3</label>
+    <label index="reference.title.3">Shopping-Center</label>
+    <label index="reference.id.4">4</label>
+    <label index="reference.title.4">Parking Experts</label>
+    <label index="reference.id.5">5</label>
+    <label index="reference.title.5">Research &amp; Consulting</label>
+    <!-- Reference overview paging labels -->
+    <label index="reference.paging.first">Erste</label>
+    <label index="reference.paging.prev">Vor</label>
+    <label index="reference.paging.next">Nächste</label>
+    <label index="reference.paging.last">Letzte</label>
+    <label index="reference.paging.page-indicator">Seite #PAGE# von #TOTAL#</label>
+    <!-- City detail labels -->
+    <label index="city.label.ranking">CITY-RANKING</label>
+    <label index="city.label.pop">Einwohner</label>
+    <label index="city.label.popdev">Bevölkerungsentwicklung</label>
+    <label index="city.label.ins">Soz.Vers.Beschäftigte</label>
+    <label index="city.label.unemp">Arbeitslosenquote</label>
+    <label index="city.label.purch">Einzelhandelkaufkraft</label>
+    <label index="city.label.central">Einzelhandelszentralität</label>
+    <label index="city.label.purchdev">Kaufpreisentwicklung</label>
+    <label index="city.label.bandbreite">Kaufpreisfaktor</label>
+    <label index="city.label.rentdem">Nachfragekoeffizient Vermietung</label>
+    <label index="city.label.cityinfo">Stadt Infos</label>
+    <label index="city.label.streets">Straßen</label>
+    <label index="city.label.contact">Ansprechpartner</label>
+    <!-- Street detail labels -->
+    <label index="street.label.area">Fläche</label>
+    <label index="street.label.measurement"><![CDATA[Miete in EUR/m<sup>2</sup>]]></label>
+    <label index="street.label.dev">Entwicklung zum Vorjahr</label>
+    <label index="street.label.contact">Ansprechpartner</label>
+    <label index="street.label.retail">Fläche</label>
+    <label index="street.label.figures1"><![CDATA[80-120m<sup>2</sup>]]></label>
+    <label index="street.label.figures2"><![CDATA[300-500m<sup>2</sup>]]></label>
+    <!-- iAsk tabs -->
+    <label index="iask.title.object">Objekt</label>
+    <label index="iask.title.contact">Kontakt</label>
+    <label index="iask.button.send">Senden</label>
+    <label index="iask.radio.buy">Kauf</label>
+    <label index="iask.radio.rent">Miete</label>
+    <!-- iAsk placeholder text -->
+    <label index="iask.address.text">Straße Nr.</label>
+    <label index="iask.place.text">Ort</label>
+    <label index="iask.name.text">Vorname Nachname</label>
+    <label index="iask.email.text">E-Mailadresse</label>
+    <label index="iask.msg.text">Ihre Mitteilung</label>
+    <!-- iAsk email misc -->
+    <label index="iask.mail.subject">iAsk - Immobilienanfrage</label>
+    <!-- iAsk messages -->
+    <label index="iask.camera.notsupported">Zugriff auf die Kamerafunktion wird leider nicht unterstützt</label>
+    <label index="iask.camera.imagefailed">Beim Zugriff auf das Bild ist leider ein Fehler aufgetreten</label>
+    <label index="iask.geo.notsupported">Die Geolokalisierung wird leider nicht unterstützt</label>
+    <label index="iask.geo.noresults">Für Ihre Ortsangaben wurde leider keine Adresse gefunden</label>
+    <label index="iask.geo.error">Für Ihre Ortsangaben wurde leider keine Adresse gefunden</label>
+    <label index="iask.form.error">Einige der Felder sind leer. Bitte füllen Sie diese noch aus</label>
+    <label index="iask.form.msg">Vielen Dank für Ihre Angaben. Die Email wurde erfolgreich verschickt.</label>
+    <label index="iask.form.fail">Bei der Übertragung der Email ist ein Fehler aufgetreten. Bitte versuchen Sie es später noch einmal.</label>
+    <label index="iask.form.invalidemail">Bitte geben Sie eine gültige Email-Adresse an!</label>
+    <!-- Contact labels -->
+    <label index="contact.label.tel">Telefon</label>
+    <label index="contact.label.email">E-Mail</label>
+    <label index="contact.label.web">Webseite</label>
+    <label index="contact.label.tel-short">Tel</label>
+    <label index="contact.label.fax">Fax</label>
+    <label index="contact.label.link.tel">Telefon</label>
+    <label index="contact.label.link.email">E-Mail</label>
+    <label index="contact.label.link.web">Webseite</label>
+    <!-- Info-Centre Links -->
+    <label index="info-centre.numlinks">6</label>
+    <label index="info-centre.link.1">news.html</label>
+    <label index="info-centre.linktext.1">Presse</label>
+    <label index="info-centre.link.external.1">0</label>
+    <label index="info-centre.link.2"><![CDATA[http://www.comfort.de/de/unternehmen/ueber-comfort/]]></label>
+    <label index="info-centre.linktext.2">Über COMFORT</label>
+    <label index="info-centre.link.external.2">1</label>
+    <label index="info-centre.link.3"><![CDATA[http://www.comfort.de/de/unternehmen/karriere/]]></label>
+    <label index="info-centre.linktext.3">Karriere</label>
+    <label index="info-centre.link.external.3">1</label>
+    <label index="info-centre.link.4"><![CDATA[http://www.comfort.de/de/unternehmen/philosophie-portrait/]]></label>
+    <label index="info-centre.linktext.4">Philosophie / Portrait</label>
+    <label index="info-centre.link.external.4">1</label>
+    <label index="info-centre.link.5">impressum.html</label>
+    <label index="info-centre.linktext.5">Impressum</label>
+    <label index="info-centre.link.external.5">0</label>
+    <label index="info-centre.link.6">setup.html</label>
+    <label index="info-centre.linktext.6">Länderauswahl</label>
+    <label index="info-centre.link.external.6">0</label>
+    <!-- Services Links -->
+    <label index="services.numlinks">6</label>
+    <label index="services.link.1">info-service.html?type=lea&amp;id=1</label>
+    <label index="services.linktext.1">Vermietung</label>
+    <label index="services.link.2">info-service.html?type=inv&amp;id=2</label>
+    <label index="services.linktext.2">Investment</label>
+    <label index="services.link.3">info-service.html?type=dev&amp;id=3</label>
+    <label index="services.linktext.3">Development</label>
+    <label index="services.link.4">info-service.html?type=res&amp;id=4</label>
+    <label index="services.linktext.4">Research &amp; Consulting</label>
+    <!-- <label index="services.link.5">info-service.html?type=par&amp;id=5</label> -->
+    <!-- <label index="services.linktext.5">Parking Experts</label> -->
+    <label index="services.link.5">info-service.html?type=con&amp;id=5</label>
+    <label index="services.linktext.5">Center Consulting</label>
+    <label index="services.link.6">info-service.html?type=ass&amp;id=6</label>
+    <label index="services.linktext.6">Bewertung</label>
+    <!-- Loading message(s) -->
+    <label index="loading.msg.data-from-server">Es werden Daten vom Server gelesen. Bitte haben Sie einen Moment Geduld!</label>
+    <!-- Generic error -->
+    <label index="error.ajax-fail">Benötigte Daten konnten leider nicht abgerufen werden. Bitte versuchen Sie es später noch einmal.</label>
+    <label index="error.news-fail">Die Neuigkeiten konnten nicht geladen werden. Bitte versuchen Sie es später erneut!</label>
+    <label index="button.favoerites">Favoriten</label>
+    <label index="button.edit">Bearbeiten</label>    
+    <label index="button.map.area">Besatz</label>
+    <label index="button.map.google">Google Maps</label>
+    <label index="button.map.osm">OSM</label>
+    <label index="button.map.streetview">Streetview</label>
+    <label index="fav.send.selection">Auswahl senden</label>
+    <label index="contact.button.map">Karte</label>
+</lang>

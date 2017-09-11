@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-navbar color="white">
+    <ion-buttons end>
+      <button id="menu-button" ion-button menuToggle end></button>
+    </ion-buttons>
+    <ion-title>{{getLangText('title.filter')}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-row class="nav-button-container">
+     <ion-col col-12> 
+      <button ion-button tappable color="active-button-color" (click)="onResetButtonClick()">{{getLangText('button.reset-filter')}}</button>
+     </ion-col>     
+  </ion-row>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>{{getLangText('filter.pop')}}</ion-label> 
+      <ion-label class="range-left">{{population.lower}}</ion-label>
+      <ion-label class="range-right">{{population.upper}}</ion-label>     
+      <ion-range min="10000" max="3500000" dualKnobs="true" pin="true" step="5000" [(ngModel)]="population" color="secondary"></ion-range>    
+    </ion-item>
+
+    <ion-item>
+      <ion-label>{{getLangText('filter.popdev')}}</ion-label>
+      <ion-label class="range-left">{{population_dev.lower}}</ion-label>
+      <ion-label class="range-right">{{population_dev.upper}}</ion-label>
+      <ion-range min="-10" max="10" dualKnobs="true" pin="true" step="1" [(ngModel)]="population_dev" color="secondary">
+      </ion-range>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>{{getLangText('filter.ins')}}</ion-label>
+      <ion-label class="range-left">{{social_insurance.lower}}</ion-label>
+      <ion-label class="range-right">{{social_insurance.upper}}</ion-label>
+      <ion-range min="5000" max="2000000" dualKnobs="true" pin="true" step="5000" [(ngModel)]="social_insurance" color="secondary"></ion-range>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>{{getLangText('filter.unemp')}}</ion-label>
+      <ion-label class="range-left">{{unemployment_rate.lower}}</ion-label>
+      <ion-label class="range-right">{{unemployment_rate.upper}}</ion-label>
+      <ion-range min="2" max="30" dualKnobs="true" pin="true" step="1" [(ngModel)]="unemployment_rate" color="secondary"></ion-range>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>{{getLangText('filter.purch')}}</ion-label>
+      <ion-label class="range-left">{{purchasing_power.lower}}</ion-label>
+      <ion-label class="range-right">{{purchasing_power.upper}}</ion-label>
+      <ion-range min="40" max="150" dualKnobs="true" pin="true" step="1" [(ngModel)]="purchasing_power" color="secondary"></ion-range>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>{{getLangText('filter.central')}}</ion-label>
+      <ion-label class="range-left">{{certrality_param.lower}}</ion-label>
+      <ion-label class="range-right">{{certrality_param.upper}}</ion-label>
+      <ion-range min="50" max="300" dualKnobs="true" pin="true" step="1" [(ngModel)]="certrality_param" color="secondary"></ion-range>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>COMFORT City Ranking</ion-label>
+      <ion-label class="range-left">{{city_ranking.lower}}</ion-label>
+      <ion-label class="range-right">{{city_ranking.upper}}</ion-label>
+      <ion-range min="0" max="7" dualKnobs="true" pin="true" step="1" [(ngModel)]="city_ranking" color="secondary"></ion-range>
+    </ion-item>
+  </ion-list>
+</ion-content>

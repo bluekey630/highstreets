@@ -1,0 +1,416 @@
+<ion-header>
+
+  <ion-navbar color="white">
+    <ion-buttons end>
+      <button id="menu-button" ion-button menuToggle end></button>
+    </ion-buttons>
+    <ion-title>{{getLangText('title.services')}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <div class="nav-button-container">{{service.item}}</div> 
+
+  <section *ngIf="lang=='de-de'"><!--de-de -->
+    <div *ngIf="service.id==0">
+        <strong><span>Vermietung</span><br>Professionelle Partnerwahl.</strong>
+        <p>Wir benennen die optimale Nutzung für Shop-, Kaufhaus- oder Fachmarktflächen, prognostizieren die aktuell erzielbaren Mieten und vermitteln den geeigneten Mieter. Zur Zufriedenheit unserer Kunden, zu denen ausnahmslos alle nationalen und internationalen Filialisten zählen, die in Deutschland erfolgreich tätig sind. Wir wissen, wer an welchem Standort das beste Ergebnis erzielt und beraten Eigentümer wie Einzelhändler gleichermaßen.</p>
+        <strong>Nutzen für den Vermieter:</strong>
+        <ul>
+            <li>Detaillierte Kenntnis der Flächengesuche und der Zielstandorte aller expansiven Filialisten</li>
+            <li>Wissen um Denkweise, Sprache und Kalkulation des Einzelhandels</li>
+            <li>Belastbare und marktgerechte Mietpreis- und Vermarktungseinschätzung</li>
+            <li>Diskrete Vermarktung ohne Streuverluste mit optimalem Ergebnis</li>
+        </ul>
+        <strong>Nutzen für den Mieter:</strong>
+        <ul>
+            <li>Marktüberblick und Markttransparenz</li>
+            <li>Konsequente Beachtung individueller Standort- und Flächenprofile</li>
+            <li>Abschlussorientierte Mietvertragsverhandlungen für optimale Ergebnisse</li>
+            <li>Eindeutige und klare Interessensvertretung im Rahmen eines Alleinsuchauftrages</li>
+            <li>Zielakquisition von Objekten, die sich nicht am Markt befinden.</li>
+        </ul>
+    </div>
+    <div *ngIf="service.id==1">
+        <strong><span>Investment</span><br>Für jedes Geschäftshaus den optimalen Käufer.</strong>
+        <p>COMFORT profitiert im Bereich Investment in besonderem Maße von dem Know-how aus den Bereichen Consulting und Vermietung. Der Kaufpreis, der für ein Geschäftshaus, ein Einkaufscenter oder einen Fachmarkt erzielt wird, ist vorrangig von der Nachhaltigkeit der Mieterträge abhängig – also von der Qualität der Mieter, der Mietverträge, der künftigen Vermietbarkeit und gegebenenfalls Zweitnutzung. Die saubere Konzeption und die Flexibilität einer Einzelhandelsimmobilie zahlen sich auch Jahrzehnte später noch aus. Die Dienstleistungen der COMFORT umfassen neben dem Nachweis einer Kaufgelegenheit und der Vermittlung vor allen Dingen auch die gemeinsame Aufarbeitung und Prüfung der Immobilie und des Standortes im Rahmen einer Due Diligence. Portfolioanalysen, sale-lease-back-Umsetzungen, An- und Verkaufsberatung, Vermarktungsstrategien, Immobiliengutachten und Developmentberatung zählen ebenso zu unserer Dienstleistungspalette wie unverbindliche Beratungsgespräche zur Ermittlung des optimalen Verkaufspreises und -zeitpunktes. Standortgutachten, Nachhaltigkeits- oder Schwachstellenanalysen sowie second-opinion-Prüfungen werden auch unabhängig von der Vermittlung angeboten.</p>
+    </div>
+    <div *ngIf="service.id==2">
+        <strong><span>Development</span><br>Potentiale erkennen und Chancen nutzen.</strong>
+        <p>Erfolgreiche Einzelhändler sind auf sauber konzipierte und zukunftsorientierte Flächen ebenso angewiesen wie Immobilien- und Kapitalinvestoren. Dies vorausgesetzt, sind sie dann aber auch bereit, entsprechende Preise zu bezahlen.</p>
+        <p>Eben in diesem konzeptionellen Bereich liegt eine besondere Stärke der COMFORT-Gruppe. Die jahrelange Spezialisierung und die traditionelle Nähe zur Projektentwicklung prädestinieren die COMFORT als Partner für erfolgreiche Entwicklungsmaßnahmen im Einzelhandel. Die Liste der von uns initiierten und mit Partnern erfolgreich umgesetzten Einzelhandelsprojekte ist ebenso lang wie prominent.</p>
+        <p>Eigentümer von sanierungsbedürftigen Gebäuden, Entwicklungsgrundstücken oder Abrissobjekten in 1A-Geschäftslagen erzielen am Markt mit der Hilfe der COMFORT deutlich höhere Verkaufspreise, weil solche Objekte durch Kunden und Partnerunternehmen der COMFORT dauerhaft gesucht werden.</p>
+        <strong>Zu den Dienstleistungen für Projektentwickler zählen:</strong>
+        <ul>
+            <li>Idee-Initiierung</li>
+            <li>Entwicklung der Konzeption</li>
+            <li>Akquisition, Vermittlung der Grundstücke</li>
+            <li>Wirtschaftlichkeitsempfehlung</li>
+            <li>Vermittlung der Mietverträge</li>
+            <li>Vermittlung der Endinvestoren</li>
+        </ul>
+        <strong>Nutzen für den Vermieter:</strong>
+        <ul>
+            <li>Markt- und langfristig bedarfsausgerichtete Planung und Konzeption der Flächen</li>
+            <li>Hohe Vorvermietungssicherheit</li>
+            <li>Sicherung langfristig erzielbarer Mieterträge</li>
+            <li>Bonitätsstarke Mieter</li>
+            <li>Langfristbetrachtung mit Zweit- und Drittnutzung</li>
+        </ul>
+        <strong>Nutzen für den Mieter:</strong>
+        <ul>
+            <li>Gezieltes Angebot bedarfsgerechter Einzelhandelsflächen</li>
+            <li>Frühzeitige Einflussnahme auf Planung und Ausstattung</li>
+            <li>Minimierung baulicher Kosten</li>
+        </ul>
+    </div>
+    <div *ngIf="service.id==3">
+        <strong><span>Research-Consulting</span></strong>
+        <ul>
+            <li>Standort- und Marktanalysen für Handelsimmobilien</li>
+            <li>Wirtschaftliche Machbarkeit von Projektentwicklungen</li>
+            <li>Due Diligence im Ankauf</li>
+            <li>Finanzierung</li>
+            <li>Wertermittlung</li>
+            <li>Mietpreiseinschätzung</li>
+            <li>Expansionsberatung</li>
+            <li>Städtebauliche Verträglichkeit</li>
+            <li>Schwachstellenanalyse</li>
+        </ul>
+    </div>
+    <div *ngIf="service.id==4">
+        <strong><span>Center-Consulting</span><br>Mit dem richtigen Konzept zur 1A-Lage.</strong>
+        <p>Unsere Beratungsleistungen sind so umfassend wie detailliert:</p>
+        <ul>
+            <li>Developmentberatung von der Akquisition über Konzeption und Vermietung bis zum Verkauf</li>
+            <li>Bedarfs- und marktgerechte Planung von Einzelhandelsflächen</li>
+            <li>Optimierung der Handelsflächen in Bestandsimmobilien und bei Neubauplanungen</li>
+            <li>Wertermittlung für überwiegend einzelhandelsgenutzte Immobilien</li>
+            <li>Standortgutachten (Mikro- und/oder Makroanalyse)</li>
+            <li>second-opinion-Prüfung beim Ankauf</li>
+            <li>Portfolioanalysen/Portfolioberatung</li>
+            <li>sale-lease-back-Beratung / -Umsetzung</li>
+            <li>An- und Verkaufsberatung</li>
+            <li>Ermittlung des optimalen Verkaufspreises und -zeitpunktes</li>
+            <li>Due-Diligence-Prüfung</li>
+            <li>Vermarktungsstrategien (Verkauf/Vermietung)</li>
+            <li>Mietanalysen</li>
+            <li>Beratung und Verhandlungsführung bei Mietvertragsverlängerungen und Vormietrechten</li>
+            <li>Abschlussorientierte Mietvertragsverhandlungen als Dienstleistung für Mieter und Vermieter</li>
+            <li>Entwicklung und Umsetzung individueller und marktfähiger Expansionsstrategien (Retail Consulting)</li>
+            <li>Konzeption, Umsetzung und Vermietung von Einkaufszentren, Passagen, Galerien (Center Consulting)</li>
+        </ul>
+    </div>
+    <div *ngIf="service.id==5">
+        <strong><span>Bewertung</span></strong>
+        <ul>
+            <li>Marktwerte für Handelsimmobilien (Einzelimmobilien und Portfolien) nach Ertragswert-, DCF- oder Fair Value-Methode</li>
+            <li>Marktmieten sowie nachhaltige Mietansätze</li>
+            <li>Umsatz-Mietbelastungen</li>
+            <li>Wertschöpfungspotenziale bei Neuvermietungen</li>
+            <li>Mieteinschätzungen für Projektentwicklungen</li>
+        </ul>
+    </div>
+  </section>
+  <section *ngIf="lang=='en-de'"><!-- en-de-->
+    <div *ngIf="service.id==0">
+        <strong><span>Leasing</span><br>The optimum tenant for every retail shop.</strong>
+        <p>We define the optimum utilization of the floor space of the shop, department store or specialized store, forecast currently attainable leasing rates and procure suitable tenants. We satisfy our customers, among them all of the national and international chain stores - without exception - that operate successfully in Germany. We know who can obtain the best results for a specific location and we consult owners as well as retailers equally.</p>
+        <strong>Landlord's benefits:</strong>
+        <ul>
+            <li>Detailed knowledge of searches for premises and target locations of all expanding chain stores</li>
+            <li>Knowledge of the approach, language, and calculation of the retail industry</li>
+            <li>Sustainable and market-appropriate assessment of leasing rates and distribution options</li>
+            <li>Discrete distribution without wastage, with optimum results</li>
+        </ul>
+        <strong>Tenant's benefits:</strong>
+        <ul>
+            <li>Market overview and market transparency</li>
+            <li>Closing-oriented negotiations for lease agreements to achieve optimum results</li>
+            <li>Concise and clear representation of interests within the scope of sole location rights</li>
+            <li>Targeted acquisition of objects that are not available on the market</li>
+        </ul>
+    </div>
+    <div *ngIf="service.id==1">
+        <strong><span>Investment</span><br>The optimum investor for every commercial building.</strong>
+        <p>In the area of investment, COMFORT profits highly from its know-how in the areas of consulting and leasing. The purchase price that will be achieved for a commercial building, a retail centre or a category specialist centre, depends primarily on the sustainability of leasing profits - meaning the quality of the tenants, the leasing agreements and the future leasability after the expiration of the lease agreements. A clean design and flexibility of a retail property will pay off, even after decades. COMFORT'S services include the confirmation of purchase opportunities and the brokerage, particularly also the coordinated processing and inspection of the property and the location within the scope of a due diligence. Part of our range of services are portfolio analyses, sale-lease-back implementation, acquisition and sales consultation, distribution strategies, real property assessments, and development consultation, as well as non-binding consultations to determine the optimum sales price and time. We also offer location assessments and analyses of sustainability or weaknesses, as well as second opinion assessments, regardless of brokerage.</p>
+    </div>
+    <div *ngIf="service.id==2">
+        <strong><span>Development</span><br>Recognizing potential, utilizing opportunities.</strong>
+        <p>Successful retailers rely on areas with a clean, future-oriented design, just like real estate or capital investors. This provided, they are also willing to pay corresponding prices.<br>
+        This area of conceptual design is a particular strength of the COMFORT group. The long-term specialization and traditional proximity to project development predestine COMFORT to be a partner for successful development measures in the retail industry. The list of retail projects that we initiated and successfully implemented jointly with our partners - is as long as it is full of well-known brands. Owners of buildings that are in need of reconstruction, real estate ready for development or demolition properties in prime commercial locations can reach significantly higher sales prices with COMFORT'S assistance, because such properties are always sought by COMFORT'S partner companies.</p>
+        <strong>Some of the services we offer for project developers are:</strong>
+        <ul>
+            <li>Idea initiation</li>
+            <li>Development of conceptual design</li>
+            <li>Acquisition and brokerage of properties</li>
+            <li>Profitability recommendations</li>
+            <li>Brokering leasing agreements</li>
+            <li>Brokering final investors</li>
+        </ul>
+        <strong>Landlord's benefits:</strong>
+        <ul>
+            <li>Market and demand oriented planning and conceptual design of areas</li>
+            <li>High level of security during leasing before completion</li>
+            <li>Securing long-term achievable leasing revenue</li>
+            <li>Creditworthy tenants</li>
+            <li>Long-term view with second and third party utilization</li>
+        </ul>
+        <strong>Tenant's benefits:</strong>
+        <ul>
+            <li>Targeted offer of retail areas that are tailored to the specific market</li>
+            <li>Timely exertion of influence on planning and equipment</li>
+            <li>Minimization of construction costs</li>
+        </ul>
+    </div>
+    <div *ngIf="service.id==3">
+        <strong><span>Research &amp; Consulting</span></strong>
+        <ul>
+            <li>Location and Market Analyses for Retail Properties</li>
+            <li>Due Diligence (acquisition phases)</li>
+            <li>Finance</li>
+            <li>Assessment of retail properties</li>
+            <li>Market valuation (sale or purchase prices)</li>
+            <li>Expansion consultancy</li>
+            <li>Urbanistic agreeability</li>
+            <li>SWOT analysis</li>
+        </ul>
+    </div>
+    <div *ngIf="service.id==4">
+        <strong><span>Center Consulting</span><br>Gain prime locations with the right concept.</strong>
+        <p>Our consultation services are as comprehensive as they are detailed:</p>
+        <ul>
+            <li>Development consultation for the acquisition, conceptual design and leasing, even disposal</li>
+            <li>Demand and market oriented planning of retail space</li>
+            <li>Optimization of retail space in existing real properties as well as plans for new constructions</li>
+            <li>Determination of value for real properties with chiefly retail utilization</li>
+            <li>Location assessments (micro and/or macro analysis)</li>
+            <li>Second opinion assessment during acquisition</li>
+            <li>Portfolio analysis / portfolio consultation</li>
+            <li>Sale/leaseback consultation / implementation</li>
+            <li>Consultation for acquisition and disposal</li>
+            <li>Determination of the optimum sales price and time</li>
+            <li>Due Diligence</li>
+            <li>Marketing strategies (sale/lease)</li>
+            <li>Lease analysis</li>
+            <li>Consultation and negotiations for lease agreement extensions and pre-emptive rights</li>
+            <li>Closing-oriented negotiations for lease agreements as a service to the tenant and landlord</li>
+            <li>Development and implementation of personalized, marketable expansion strategies (Retail Consulting)</li>
+            <li>Conceptual design, implementation, and leasing of shopping centres, passages, galleries (Center Consulting)</li>
+        </ul>
+    </div>
+    <div *ngIf="service.id==5">
+        <strong><span>Assessments</span></strong>
+        <ul>
+            <li>Market values for retail properties (individual properties and portfolios) according to capitalised earnings, DCF or fair value methods</li>
+            <li>Market rents and sustainable rent concepts</li>
+            <li>Turnover-to-rent ratio</li>
+            <li>Value creation potential in new rentals</li>
+            <li>Rent assessments for project development purposes</li>
+        </ul>
+    </div>
+  </section>
+  <section *ngIf="lang=='de-ch'"><!-- de-ch-->
+    <div *ngIf="service.id==0">
+        <strong><span>Vermietung</span><br>Professionelle Partnerwahl.</strong>
+        <p>Wir benennen die optimale Nutzung für Shop-, Kaufhaus- oder Fachmarktflächen, prognostizieren die aktuell erzielbaren Mieten und vermitteln den geeigneten Mieter. Zur Zufriedenheit unserer Kunden, zu denen ausnahmslos alle nationalen und internationalen Filialisten zählen, die in der Schweiz und in Deutschland erfolgreich tätig sind. Wir wissen, wer an welchem Standort das beste Ergebnis erzielt und beraten Eigentümer wie Detailhändler gleichermaßen.</p>
+        <strong>Nutzen für den Vermieter:</strong>
+        <ul>
+            <li>Detaillierte Kenntnis der Flächengesuche und der Zielstandorte aller expansiven Filialisten</li>
+            <li>Wissen um Denkweise, Sprache und Kalkulation des Detailhandels</li>
+            <li>Belastbare und marktgerechte Mietpreis- und Vermarktungseinschätzung</li>
+            <li>Diskrete Vermarktung ohne Streuverluste mit optimalem Ergebnis</li>
+        </ul>
+        <strong>Nutzen für den Mieter:</strong>
+        <ul>
+            <li>Marktüberblick und Markttransparenz</li>
+            <li>Konsequente Beachtung individueller Standort- und Flächenprofile</li>
+            <li>Abschlussorientierte Mietvertragsverhandlungen für optimale Ergebnisse</li>
+            <li>Eindeutige und klare Interessensvertretung im Rahmen eines Alleinsuchauftrages</li>
+            <li>Zielakquisition von Objekten, die sich nicht am Markt befinden.</li>
+        </ul>
+    </div>
+    <div *ngIf="service.id==1">
+        <strong><span>Investment</span><br>Für jedes Geschäftshaus den optimalen Käufer.</strong>
+        <p>COMFORT profitiert im Bereich Investment in besonderem Maße von dem Know-how aus den Bereichen Consulting und Vermietung. Der Kaufpreis, der für ein Geschäftshaus, ein Einkaufscenter oder einen Fachmarkt erzielt wird, ist vorrangig von der Nachhaltigkeit der Mieterträge abhängig – also von der Qualität der Mieter, der Mietverträge, der künftigen Vermietbarkeit und gegebenenfalls Zweitnutzung. Die saubere Konzeption und die Flexibilität einer Detailhandelsimmobilie zahlen sich auch Jahrzehnte später noch aus. Die Dienstleistungen der COMFORT umfassen neben dem Nachweis einer Kaufgelegenheit und der Vermittlung vor allen Dingen auch die gemeinsame Aufarbeitung und Prüfung der Immobilie und des Standortes im Rahmen einer Due Diligence. Portfolioanalysen, sale-lease-back-Umsetzungen, An- und Verkaufsberatung, Vermarktungsstrategien, Immobiliengutachten und Developmentberatung zählen ebenso zu unserer Dienstleistungspalette wie unverbindliche Beratungsgespräche zur Ermittlung des optimalen Verkaufspreises und -zeitpunktes. Standortgutachten, Nachhaltigkeits- oder Schwachstellenanalysen sowie second-opinion-Prüfungen werden auch unabhängig von der Vermittlung angeboten.</p>
+    </div>
+    <div *ngIf="service.id==2">
+        <strong><span>Development</span><br>Potentiale erkennen und Chancen nutzen.</strong>
+        <p>Erfolgreiche Detailhändler sind auf sauber konzipierte und zukunftsorientierte Flächen ebenso angewiesen wie Immobilien- und Kapitalinvestoren. Dies vorausgesetzt, sind sie dann aber auch bereit, entsprechende Preise zu bezahlen.</p>
+        <p>Eben in diesem konzeptionellen Bereich liegt eine besondere Stärke der COMFORT-Gruppe. Die jahrelange Spezialisierung und die traditionelle Nähe zur Projektentwicklung prädestinieren die COMFORT als Partner für erfolgreiche Entwicklungsmaßnahmen im Detailhandel. Die Liste der von uns initiierten und mit Partnern erfolgreich umgesetzten Detailhandelsprojekte ist ebenso lang wie prominent.</p>
+        <p>Eigentümer von sanierungsbedürftigen Gebäuden, Entwicklungsgrundstücken oder Abrissobjekten in 1A-Geschäftslagen erzielen am Markt mit der Hilfe der COMFORT deutlich höhere Verkaufspreise, weil solche Objekte durch Kunden und Partnerunternehmen der COMFORT dauerhaft gesucht werden.</p>
+        <strong>Zu den Dienstleistungen für Projektentwickler zählen:</strong>
+        <ul>
+            <li>Idee-Initiierung</li>
+            <li>Entwicklung der Konzeption</li>
+            <li>Akquisition, Vermittlung der Grundstücke</li>
+            <li>Wirtschaftlichkeitsempfehlung</li>
+            <li>Vermittlung der Mietverträge</li>
+            <li>Vermittlung der Endinvestoren</li>
+        </ul>
+        <strong>Nutzen für den Vermieter:</strong>
+        <ul>
+            <li>Markt- und langfristig bedarfsausgerichtete Planung und Konzeption der Flächen</li>
+            <li>Hohe Vorvermietungssicherheit</li>
+            <li>Sicherung langfristig erzielbarer Mieterträge</li>
+            <li>Bonitätsstarke Mieter</li>
+            <li>Langfristbetrachtung mit Zweit- und Drittnutzung</li>
+        </ul>
+        <strong>Nutzen für den Mieter:</strong>
+        <ul>
+            <li>Gezieltes Angebot bedarfsgerechter Detailhandelsflächen</li>
+            <li>Frühzeitige Einflussnahme auf Planung und Ausstattung</li>
+            <li>Minimierung baulicher Kosten</li>
+        </ul>
+    </div>
+    <div *ngIf="service.id==3">
+        <strong><span>Research-Consulting</span></strong>
+        <ul>
+            <li>Standort- und Marktanalysen für Detailhandelsimmobilien</li>
+            <li>Wirtschaftliche Machbarkeit von Projektentwicklungen</li>
+            <li>Due Diligence im Ankauf</li>
+            <li>Finanzierung</li>
+            <li>Wertermittlung</li>
+            <li>Mietpreiseinschätzung</li>
+            <li>Expansionsberatung</li>
+            <li>Städtebauliche Verträglichkeit</li>
+            <li>Schwachstellenanalyse</li>
+        </ul>
+    </div>
+    <div *ngIf="service.id==4">
+        <strong><span>Center-Consulting</span><br>Mit dem richtigen Konzept zur 1A-Lage.</strong>
+        <p>Unsere Beratungsleistungen sind so umfassend wie detailliert:</p>
+        <ul>
+            <li>Developmentberatung von der Akquisition über Konzeption und Vermietung bis zum Verkauf</li>
+            <li>Bedarfs- und marktgerechte Planung von Detailhandelsflächen</li>
+            <li>Optimierung der Handelsflächen in Bestandsimmobilien und bei Neubauplanungen</li>
+            <li>Wertermittlung für überwiegend detailhandelsgenutzte Immobilien</li>
+            <li>Standortgutachten (Mikro- und/oder Makroanalyse)</li>
+            <li>second-opinion-Prüfung beim Ankauf</li>
+            <li>Portfolioanalysen/Portfolioberatung</li>
+            <li>sale-lease-back-Beratung / -Umsetzung</li>
+            <li>An- und Verkaufsberatung</li>
+            <li>Ermittlung des optimalen Verkaufspreises und -zeitpunktes</li>
+            <li>Due-Diligence-Prüfung</li>
+            <li>Vermarktungsstrategien (Verkauf/Vermietung)</li>
+            <li>Mietanalysen</li>
+            <li>Beratung und Verhandlungsführung bei Mietvertragsverlängerungen und Vormietrechten</li>
+            <li>Abschlussorientierte Mietvertragsverhandlungen als Dienstleistung für Mieter und Vermieter</li>
+            <li>Entwicklung und Umsetzung individueller und marktfähiger Expansionsstrategien (Retail Consulting)</li>
+            <li>Konzeption, Umsetzung und Vermietung von Einkaufszentren, Passagen, Galerien (Center Consulting)</li>
+        </ul>
+    </div>
+    <div *ngIf="service.id==5">
+        <strong><span>Bewertung</span></strong>
+        <ul>
+            <li>Marktwerte für Handelsimmobilien (Detailhandelsimmobilien und Portfolien) nach Ertragswert-, DCF- oder Fair Value-Methode</li>
+            <li>Marktmieten sowie nachhaltige Mietansätze</li>
+            <li>Umsatz-Mietbelastungen</li>
+            <li>Wertschöpfungspotenziale bei Neuvermietungen</li>
+            <li>Mieteinschätzungen für Projektentwicklungen</li>
+        </ul>
+    </div>
+  </section>
+  <section *ngIf="lang=='en-ch'"><!--en-ch -->
+    <div *ngIf="service.id==0">
+        <strong><span>Leasing</span><br>The optimum tenant for every retail shop.</strong>
+        <p>We define the optimum utilization of the floor space of the shop, department store or specialized store, forecast currently attainable leasing rates and procure suitable tenants. We satisfy our customers, among them all of the national and international chain stores - without exception - that operate successfully in Germany. We know who can obtain the best results for a specific location and we consult owners as well as retailers equally.</p>
+        <strong>Landlord's benefits:</strong>
+        <ul>
+            <li>Detailed knowledge of searches for premises and target locations of all expanding chain stores</li>
+            <li>Knowledge of the approach, language, and calculation of the retail industry</li>
+            <li>Sustainable and market-appropriate assessment of leasing rates and distribution options</li>
+            <li>Discrete distribution without wastage, with optimum results</li>
+        </ul>
+        <strong>Tenant's benefits:</strong>
+        <ul>
+            <li>Market overview and market transparency</li>
+            <li>Closing-oriented negotiations for lease agreements to achieve optimum results</li>
+            <li>Concise and clear representation of interests within the scope of sole location rights</li>
+            <li>Targeted acquisition of objects that are not available on the market</li>
+        </ul>
+    </div>
+    <div *ngIf="service.id==1">
+        <strong><span>Investment</span><br>The optimum investor for every commercial building.</strong>
+        <p>In the area of investment, COMFORT profits highly from its know-how in the areas of consulting and leasing. The purchase price that will be achieved for a commercial building, a retail centre or a category specialist centre, depends primarily on the sustainability of leasing profits - meaning the quality of the tenants, the leasing agreements and the future leasability after the expiration of the lease agreements. A clean design and flexibility of a retail property will pay off, even after decades. COMFORT'S services include the confirmation of purchase opportunities and the brokerage, particularly also the coordinated processing and inspection of the property and the location within the scope of a due diligence. Part of our range of services are portfolio analyses, sale-lease-back implementation, acquisition and sales consultation, distribution strategies, real property assessments, and development consultation, as well as non-binding consultations to determine the optimum sales price and time. We also offer location assessments and analyses of sustainability or weaknesses, as well as second opinion assessments, regardless of brokerage.</p>
+    </div>
+    <div *ngIf="service.id==2">
+        <strong><span>Development</span><br>Recognizing potential, utilizing opportunities.</strong>
+        <p>Successful retailers rely on areas with a clean, future-oriented design, just like real estate or capital investors. This provided, they are also willing to pay corresponding prices.<br>
+            This area of conceptual design is a particular strength of the COMFORT group. The long-term specialization and traditional proximity to project development predestine COMFORT to be a partner for successful development measures in the retail industry. The list of retail projects that we initiated and successfully implemented jointly with our partners - is as long as it is full of well-known brands. Owners of buildings that are in need of reconstruction, real estate ready for development or demolition properties in prime commercial locations can reach significantly higher sales prices with COMFORT'S assistance, because such properties are always sought by COMFORT'S partner companies.</p>
+        <strong>Some of the services we offer for project developers are:</strong>
+        <ul>
+            <li>Idea initiation</li>
+            <li>Development of conceptual design</li>
+            <li>Acquisition and brokerage of properties</li>
+            <li>Profitability recommendations</li>
+            <li>Brokering leasing agreements</li>
+            <li>Brokering final investors</li>
+        </ul>
+        <strong>Landlord's benefits:</strong>
+        <ul>
+            <li>Market and demand oriented planning and conceptual design of areas</li>
+            <li>High level of security during leasing before completion</li>
+            <li>Securing long-term achievable leasing revenue</li>
+            <li>Creditworthy tenants</li>
+            <li>Long-term view with second and third party utilization</li>
+        </ul>
+        <strong>Tenant's benefits:</strong>
+        <ul>
+            <li>Targeted offer of retail areas that are tailored to the specific market</li>
+            <li>Timely exertion of influence on planning and equipment</li>
+            <li>Minimization of construction costs</li>
+        </ul>
+    </div>
+    <div *ngIf="service.id==3">
+        <strong><span>Research &amp; Consulting</span></strong>
+        <ul>
+            <li>Location and Market Analyses for Retail Properties</li>
+            <li>Due Diligence (acquisition phases)</li>
+            <li>Finance</li>
+            <li>Assessment of retail properties</li>
+            <li>Market valuation (sale or purchase prices)</li>
+            <li>Expansion consultancy</li>
+            <li>Urbanistic agreeability</li>
+            <li>SWOT analysis</li>
+        </ul>
+    </div>
+    <div *ngIf="service.id==4">
+        <strong><span>Center Consulting</span><br>Gain prime locations with the right concept.</strong>
+        <p>Our consultation services are as comprehensive as they are detailed:</p>
+        <ul>
+            <li>Development consultation for the acquisition, conceptual design and leasing, even disposal</li>
+            <li>Demand and market oriented planning of retail space</li>
+            <li>Optimization of retail space in existing real properties as well as plans for new constructions</li>
+            <li>Determination of value for real properties with chiefly retail utilization</li>
+            <li>Location assessments (micro and/or macro analysis)</li>
+            <li>Second opinion assessment during acquisition</li>
+            <li>Portfolio analysis / portfolio consultation</li>
+            <li>Sale/leaseback consultation / implementation</li>
+            <li>Consultation for acquisition and disposal</li>
+            <li>Determination of the optimum sales price and time</li>
+            <li>Due Diligence</li>
+            <li>Marketing strategies (sale/lease)</li>
+            <li>Lease analysis</li>
+            <li>Consultation and negotiations for lease agreement extensions and pre-emptive rights</li>
+            <li>Closing-oriented negotiations for lease agreements as a service to the tenant and landlord</li>
+            <li>Development and implementation of personalized, marketable expansion strategies (Retail Consulting)</li>
+            <li>Conceptual design, implementation, and leasing of shopping centres, passages, galleries (Center Consulting)</li>
+        </ul>
+    </div>
+    <div *ngIf="service.id==5">
+        <strong><span>Assessments</span></strong>
+        <ul>
+            <li>Market values for retail properties (individual properties and portfolios) according to capitalised earnings, DCF or fair value methods</li>
+            <li>Market rents and sustainable rent concepts</li>
+            <li>Turnover-to-rent ratio</li>
+            <li>Value creation potential in new rentals</li>
+            <li>Rent assessments for project development purposes</li>
+        </ul>
+    </div>
+  </section>
+
+</ion-content>

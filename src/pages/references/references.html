@@ -1,0 +1,21 @@
+<ion-header>
+
+  <ion-navbar color="white">
+    <ion-buttons end>
+      <button id="menu-button" ion-button menuToggle end></button>
+    </ion-buttons>
+    <ion-title>{{getLangText('title.references')}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list inset>
+    <ion-item tappable *ngIf="getLangText('reference.title.1')!='None'" (click)="onItemClicked(0)">{{ getLangText('reference.title.1') }}</ion-item>
+    <ion-item tappable *ngIf="getLangText('reference.title.2')!='None'" (click)="onItemClicked(1)">{{ getLangText('reference.title.2') }}</ion-item> 
+    <ion-item tappable *ngIf="getLangText('reference.title.3')!='None'" (click)="onItemClicked(2)">{{ getLangText('reference.title.3') }}</ion-item> 
+    <ion-item tappable *ngIf="getLangText('reference.title.4')!='None'" (click)="onItemClicked(3)">{{ getLangText('reference.title.4') }}</ion-item> 
+    <ion-item tappable *ngIf="getLangText('reference.title.5')!='None'" (click)="onItemClicked(4)">{{ getLangText('reference.title.5') }}</ion-item> 
+  </ion-list>  
+</ion-content>

@@ -1,0 +1,47 @@
+img-view {
+    img {
+        margin: 0;
+        display: none;
+        max-width: 1000%;
+    }
+
+    ion-spinner {
+        margin: 100px auto;
+        display: block;
+    }            
+
+    .img-loaded {
+        margin: 0;
+        display: block;
+    }
+    
+    .img-loaded + ion-spinner {
+        display:none;
+    }
+
+    #plus {
+        display: block; 
+        position: fixed;      
+        bottom: 56px;
+        right: 20px;
+        width: 26px;
+        height: 26px;
+        font-size: 16px;
+        padding: 0px;
+        -webkit-transform: translateZ(0);
+        // z-index: 500;
+    }      
+    
+    #minus {
+        display: block; 
+        position: fixed;      
+        bottom: 20px;
+        right: 20px;
+        width: 26px;
+        height: 26px;
+        font-size: 16px;
+        padding: 0px;
+        -webkit-transform: translateZ(0);
+        // z-index: 500;
+    } 
+}

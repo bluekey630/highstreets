@@ -1,0 +1,52 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "de.comfort.highstreetfull"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "de.comfort.highstreetfull"
+        },
+        "cordova-plugin-email-composer": {
+            "PACKAGE_NAME": "de.comfort.highstreetfull"
+        },
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "de.comfort.highstreetfull"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "de.comfort.highstreetfull"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "de.comfort.highstreetfull"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "de.comfort.highstreetfull"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "de.comfort.highstreetfull"
+        },
+        "cordova-sqlite-storage": {
+            "PACKAGE_NAME": "de.comfort.highstreetfull"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "de.comfort.highstreetfull"
+        },
+        "cordova-plugin-screen-orientation": {
+            "PACKAGE_NAME": "de.comfort.highstreetfull"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "de.comfort.highstreetfull"
+        },
+        "es6-promise-plugin": {
+            "PACKAGE_NAME": "de.comfort.highstreetfull"
+        }
+    }
+}

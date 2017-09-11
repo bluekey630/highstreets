@@ -1,0 +1,44 @@
+<ion-header>
+
+  <ion-navbar color="white" hideBackButton>
+    <ion-buttons end>
+      <button id="menu-button" ion-button menuToggle end></button>
+    </ion-buttons>
+    <ion-title>{{getLangText('info-centre.linktext.6')}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  
+  <ion-row class="lang-button-container">
+    <ion-col col-3>
+      <button ion-button tappable [color]="cur_lang=='de'?'active-button-color':'custom-button-color'" (click)="onLangSetup('DE')">DE</button>
+    </ion-col>
+
+    <ion-col col-3>
+      <button ion-button tappable [color]="cur_lang=='de'?'custom-button-color':'active-button-color'" (click)="onLangSetup('CH')">CH</button>
+    </ion-col>     
+  </ion-row >
+
+  <div class="text-container">
+    <section *ngIf="lang=='de-de'"> <!--class="de-de" lang="de"-->
+      <br />
+      Länderauswahl Deutschland (D) / Schweiz (CH)
+    </section>
+     <section *ngIf="lang=='en-de'"> <!--class="en-de" lang="en"-->
+      <br />
+      Choose Country Germany (D) / Switzerland (CH)
+    </section> 
+    <section *ngIf="lang=='de-ch'"> <!--class="de-ch" lang="de"-->
+      <br />
+      Länderauswahl Deutschland (D) / Schweiz (CH)
+    </section>
+     <section *ngIf="lang=='en-ch'"> <!--class="en-ch" lang="en"-->
+      <br />
+      Choose Country Germany (D) / Switzerland (CH)
+    </section> 
+  </div> 
+
+  
+</ion-content>

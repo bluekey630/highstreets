@@ -1,0 +1,22 @@
+
+<ion-header>
+
+  <ion-navbar color="white" hideBackButton>
+    <ion-buttons end>
+      <button id="menu-button" ion-button menuToggle end></button>
+    </ion-buttons>
+    <ion-title>{{getLangText('title.services')}}</ion-title>
+  </ion-navbar>  
+
+</ion-header>
+
+<ion-content padding> 
+  <ion-list inset>
+    <ion-item tappable (click)="onItemClcked(0)">{{getLangText('services.linktext.1')}}</ion-item> 
+    <ion-item tappable (click)="onItemClcked(1)">{{getLangText('services.linktext.2')}}</ion-item>
+    <ion-item tappable (click)="onItemClcked(2)">{{getLangText('services.linktext.3')}}</ion-item>
+    <ion-item tappable (click)="onItemClcked(3)">{{getLangText('services.linktext.4')}}</ion-item>
+    <ion-item tappable (click)="onItemClcked(4)">{{getLangText('services.linktext.5')}}</ion-item>
+    <ion-item tappable (click)="onItemClcked(5)">{{getLangText('services.linktext.6')}}</ion-item>    
+  </ion-list>
+</ion-content>

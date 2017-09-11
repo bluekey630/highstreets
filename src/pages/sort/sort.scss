@@ -1,0 +1,24 @@
+page-sort {
+    
+    ion-content {
+
+        .scroll-content {
+            padding: 10px !important;
+            padding-top: 0px !important;
+            margin-top: 64px !important;
+        }
+       
+        ion-list {
+            margin-top: 1px !important;
+            ion-item {
+                ion-label {
+                    font-size: 14px;
+                }
+
+                ion-checkbox {
+                    margin: 8px 8px 8px 2px !important;
+                }
+            }
+        }
+    }
+}

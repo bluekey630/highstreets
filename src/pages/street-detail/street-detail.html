@@ -1,0 +1,123 @@
+<ion-header>
+
+  <ion-navbar color="white">
+    <ion-buttons end>
+      <button id="menu-button" ion-button menuToggle end></button>
+    </ion-buttons>
+    <ion-title>{{detailInfo.stadt}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <div class="nav-button-container">{{streetInfo.strasse}}</div>
+
+  <ion-list class="street-info-container">
+    <ion-item *ngIf="streetInfo.image_file">
+      <img width="100%" id="img-street" onload="let body = document.getElementById('img-street');if( body != null && body.classList != null ){body.classList.add('img-loaded');body.style.display='block'}" [src]="'http://www.highstreets.de/uploads/bilder/' + streetInfo.image_file"/>     
+      <ion-spinner></ion-spinner>
+    </ion-item>
+
+    <ion-item *ngIf="streetInfo.qm_80_120!=null&&streetInfo.qm_80_120!='0'&&detailInfo.bandbreite_kaufpreisfaktor">
+      <ion-row > 
+        <ion-col class="area-title">{{getLangText('city.label.bandbreite')}}</ion-col>
+        <ion-col class="rent-info area-info">{{getLangText('street.label.dev')}}</ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col col-11>
+          <progress-bar [progress]="value0"></progress-bar>
+        </ion-col>
+        <ion-col col-1>
+          <img class="direction" *ngIf="arrow_icon0!='unknown'" [src]="'assets/img/'+ arrow_icon0"/>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+
+    <ion-item *ngIf="streetInfo.qm_80_120==null||streetInfo.qm_80_120=='0'">
+      <section *ngIf="deviceLang=='en'">
+       <p ALIGN="JUSTIFY">If you have any detailed questions, about the rents and purchase price factors for this specific street/road, our local office is always available for you. Simply activate the contact- button at the bottom of the page.</p>
+      </section>
+
+      <section *ngIf="deviceLang=='de'">
+        <p ALIGN="JUSTIFY">Für Detailfragen zu den Mieten und Kaufpreisfaktoren in dieser Straße steht Ihnen unser Regionalbüro gerne zur Verfügung. Einfach den Ansprechpartner-Button unten aktivieren.</p>
+      </section>
+    </ion-item>
+
+    <ion-item *ngIf="streetInfo.qm_80_120!=null&&streetInfo.qm_80_120!='0'">
+      <ion-row *ngIf="streetInfo.qm_80_120!=null&&streetInfo.qm_80_120!='0'">
+        <ion-col class="area-title">{{getLangText('street.label.area')}}</ion-col>
+        <ion-col class="area-info">80-120㎡</ion-col>
+      </ion-row>
+
+      <ion-row *ngIf="streetInfo.qm_80_120!=null&&streetInfo.qm_80_120!='0'">
+        <ion-col class="rent-info">{{getLangText('reference.title.1')}} in EUR/㎡</ion-col> <!--Rent -->
+        <ion-col class="rent-info area-info">{{getLangText('street.label.dev')}}</ion-col>
+      </ion-row>
+
+      <ion-row *ngIf="streetInfo.qm_80_120!=null&&streetInfo.qm_80_120!='0'">
+        <ion-col col-11>   
+          <progress-bar [progress]="value1"></progress-bar>
+        </ion-col>
+        <ion-col col-1>
+          <img class="direction" [src]="'assets/img/'+ arrow_icon1"/>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+    
+    <ion-item *ngIf="streetInfo.qm_300_500!=null&&streetInfo.qm_300_500!='0'">
+      <ion-row *ngIf="streetInfo.qm_300_500!=null&&streetInfo.qm_300_500!='0'">
+        <ion-col class="area-title">{{getLangText('street.label.area')}}</ion-col>
+        <ion-col class="area-info">300-500㎡</ion-col>
+      </ion-row>
+
+      <ion-row *ngIf="streetInfo.qm_300_500!=null&&streetInfo.qm_300_500!='0'">
+        <ion-col class="rent-info">{{getLangText('reference.title.1')}} in EUR/㎡</ion-col>
+        <ion-col class="rent-info area-info">{{getLangText('street.label.dev')}}</ion-col>
+      </ion-row>
+
+      <ion-row *ngIf="streetInfo.qm_300_500!=null&&streetInfo.qm_300_500!='0'">
+        <ion-col col-11>
+          <progress-bar [progress]="value2"></progress-bar>
+        </ion-col>
+        <ion-col col-1>
+          <img class="direction" [src]="'assets/img/'+ arrow_icon2"/>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+
+  </ion-list>
+
+  <ion-list class="control-container">
+    <ion-item>
+      <ion-row tappable (click)="onMapButtonClicked()">
+        <ion-col col-11>{{getLangText('button.map')}}</ion-col>
+        <ion-col col-1>
+          <ion-icon name="arrow-forward"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+
+    <ion-item>
+      <ion-row tappable (click)="onContactButtonClicked()">
+        <ion-col col-11>{{getLangText('street.label.contact')}}</ion-col>
+        <ion-col col-1>
+          <ion-icon name="arrow-forward"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+
+    <!-- <ion-item>
+      <ion-row (click)="onMapButtonClicked()">
+        <ion-col col-11>{{getLangText('button.map')}}</ion-col>
+        <ion-col col-1>
+          <ion-icon name="arrow-forward"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-item> -->
+    
+  </ion-list>
+
+</ion-content>

@@ -1,0 +1,118 @@
+<ion-header>
+  <ion-navbar color="white">
+    <ion-buttons end>
+      <button id="menu-button" ion-button menuToggle end></button>
+    </ion-buttons>
+    <ion-title>{{getLangText('title.city-info')}}</ion-title>    
+  </ion-navbar> 
+</ion-header>
+
+<ion-content padding>  
+
+  <section *ngIf="lang=='de'">
+    <h5>`1`1Begriffsdefinition</h5>
+    <p>
+      <strong>Einwohnerzahlen </strong><strong>(absolut) zum 01.01.2016:<br></strong>Die Zahl der Einwohner ist nach wie vor eines der wichtigsten Kriterien für die Beurteilung der Attraktivität eines Standortes für den Einzelhandel. Sie bestimmt maßgeblich das quantitative Umsatzpotenzial. Je mehr Einwohner eine Stadt hat, desto höher ist das Kaufkraftpotenzial und damit die Chance, entsprechend höhere Umsätze zu realisieren.<br>
+      <em>Quelle: Statistisches Bundesamt.</em><BR>
+    </p>
+    <p ALIGN="JUSTIFY"><strong>Bevölkerungsentwicklung 2015 - 2016:<br></strong>Ebenso bedeutsam ist die Entwicklung der Bevölkerung an einem Standort. Während in strukturschwachen Gebieten teils starke Rückgänge hingenommen werden müssen, weisen prosperierende Standorte zumeist positive Verläufe auf. Diese haben auch direkten Einfluss auf die Umsatzchancen der ortsansässigen Einzelhändler. Insbesondere vor dem Hintergrund zunehmender Disparitäten gewinnt diese Kennziffer zunehmend an Bedeutung.<br>
+      <em>Quelle: Statistisches Bundesamt.</em>
+    </p>
+    <p ALIGN="JUSTIFY"><strong>Sozialversicherungspflichtig Beschäftigte am Arbeitsort zum 30.06.2015:<br></strong>Eine Kennziffer von nicht zu unterschätzender Bedeutung ist die Zahl der Beschäftigten an einem Standort. Hieraus leitet sich der Stellenwert als Arbeitsstandort innerhalb einer Region ab. Offensichtlich ist, dass an Standorten mit einer überdurchschnittlich hohen Beschäftigtenzahl ein besseres Konsumklima für den lokalen Einzelhandel herrscht.<br>
+      <em>Quelle: Bundesagentur für Arbeit.</em>
+    </p>
+    <p ALIGN="JUSTIFY"><strong>Arbeitslosenquote September 2016:<br></strong>Ebenso wie die Zahl der Beschäftigten und deren Entwicklung vermittelt die Arbeitslosenquote ein Bild von der wirtschaftlichen und strukturellen Stärke oder Schwäche eines Standortes. Für die Berechnung der Arbeitslosenquote wird neben der Zahl der Arbeitslosen die Gesamtheit aller zivilen Erwerbspersonen als Bemessungsgrundlage herangezogen.<br>
+      <em>Quelle: Bundesagentur für Arbeit.</em><BR>
+    </p>
+    <p ALIGN="JUSTIFY"><strong>Einzelhandelskaufkraft 2016:<br></strong>Der Einzelhandelskaufkraft-Index ergänzt die Angabe zur Einwohnerzahl eines Standortes um ein qualitatives Kriterium. Sie gibt an, wie hoch das Kaufkraftpotenzial an einem Standort ist. Der Durchschnittswert liegt bundesweit normiert bei 100. Ein Wert oberhalb von 100 signalisiert demnach ein überdurchschnittliches Kaufkraftpotenzial des Standortes. Der Einzelhandelskaufkraft-Index erlaubt jedoch keine Aussage darüber, ob das vorhandene Kaufkraftvolumen tatsächlich an dem bezeichneten Standort ausgegeben wird oder nicht.<br>
+      <em>Quelle: Einzelhandelskaufkraft</em><em><strong> </strong></em><em>Index, GfK GeoMarketing GmbH.</em><BR>
+    </p>
+    <p ALIGN="JUSTIFY"><strong>Kaufpreisfaktoren, - entwicklungen<br></strong>Die in Bandbreite dargestellten Kaufpreisfaktoren dienen als allgemeine Orientierungen für den aktuell erzielbaren Verkaufspreis für Geschäftshäuser (Mietertrag aus Retail > 60 %, aktuelle Miete etwa auf Marktniveau) mit einem gängigen Volumen in der 1A-Lage der jeweiligen Stadt. In technischer Hinsicht stellt der Kaufpreisfaktor den Multiplikator zur Ermittlung des Kaufpreises eines Geschäftshauses ohne Instandhaltungsstau dar, mit dem die jeweilige Jahresnettomiete multipliziert wird. Ausgehend von den objektspezifischen Gegebenheiten, u.a. zu Mietern, Mietverträgen, Mietvolumen, Gebäudegröße, -struktur und -zustand, Architektur, Flächenlayout, vorhandenen Flächenpotenzialen, Adresse und anderen Sondereinflüssen können die Kaufpreisfaktoren für konkrete Objekte sowohl nach oben wie nach unten von der angegebenen Bandbreite signifikant abweichen. Die momentane Entwicklungstendenz wird mit Pfeilen angegeben, wobei der im 90 Grad-Winkel nach oben zeigende Pfeil eine steigende Tendenz, der schräg nach oben zeigende Pfeil eine leicht steigende Tendenz, der gerade nach rechts zeigende Pfeil eine gleich bleibende Tendenz, der schräg nach unten zeigende Pfeil eine leicht abfallende Tendenz und der im 90 Grad-Winkel nach unten zeigende Pfeil eine fallende Tendenz abbildet.
+    </p>
+    <p ALIGN="JUSTIFY"><strong>Einzelhandelszentralität 2016:<br></strong>Die Einzelhandelszentralität zeigt an, ob an einem Standort per Saldo die Zu- oder Abflüsse der Kaufkraft überwiegen. So signalisiert ein Wert über 100, dass die rechnerischen Kaufkraftzuflüsse aus dem Umland höher sind als die Abflüsse aus der Stadt. Insofern beleuchtet die Zentralitätskennziffer in besonderer Weise die Attraktivität eines Standortes für den Einzelhandel.<br>Quelle: GfK GeoMarketing GmbH.<BR>
+    </p>
+    <p ALIGN="JUSTIFY"><strong>Mietpreise in der 1A-Lage:<br></strong>Da sich die Höhe des Mietpreises für Ladenlokale in 1A-Lagen der Innenstädte und Fußgängerzonen am Umsatzpotenzial vor Ort orientiert, stellt der Mietpreis einen der wichtigsten Indikatoren für die Attraktivität eines Standortes für den Einzelhandel dar. Die hier aufgeführten Angaben zu Mietpreisen in den 1A-Lagen beziehen sich auf zwei verschiedene Ladengrößen:</p>
+    <UL>
+      <LI>
+        <p ALIGN="JUSTIFY">80	- 120 Quadratmeter mit sechs Metern Schaufensterfront</p>
+      <LI>
+        <p ALIGN="JUSTIFY">300 - 500 Quadratmeter mit zehn Metern Schaufensterfront</p>                              
+    </UL>
+    <p ALIGN="JUSTIFY"><strong>Alle Mietpreisangaben verstehen sich unter folgenden Voraussetzungen:</strong> <BR></p>
+    <UL>
+      <LI>
+        <p ALIGN="JUSTIFY">Neuabschlüsse von Mietverträgen in absoluten 1A-Geschäftslagen über fiktive, rein erdgeschossige Verkaufsflächen kleiner (80 - 120 m²) und mittlerer (300 - 500 m²) Größe.</p>
+      <LI>
+        <p ALIGN="JUSTIFY">Die angenommene, idealtypische Ladeneinheit weist einen ebenerdigen, stufenfreien Zugang, eine bauliche Ausstattung gehobener Art und Güte sowie einen möglichst rechtwinkligen Zuschnitt auf Mindestschaufensterfront 6 m (bei 80 - 120 m²) bzw. 10 m (bei 300 - 500 m²) auf.</p>
+      <LI>
+        <p ALIGN="JUSTIFY">Höchstmieten in EUR pro m², monatlich, zzgl. gesetzlicher USt. und Nebenkosten.</p>
+      <LI>
+        <p ALIGN="JUSTIFY">Entwicklung der Mietpreise in Prozent im Zeitraum von 2013 bis 2014. Die Angaben beziehen sich auf Erfahrungswerte der COMFORT sowie auf durch COMFORT oder durch Dritte bekannt gewordene vermittelte Mietvertragsabschlüsse am jeweiligen Standort. Die Höchstmieten dienen der Orientierung und lassen sich ausschließlich unter Einbeziehung der individuellen Gegebenheiten des Hauses sowie unter Berücksichtigung der jeweiligen vertraglichen Vereinbarungen, die gegebenenfalls nicht der üblichen Art entsprechen können, auf bestimmte Objekte anwenden.</p>
+    </UL>
+    <p ALIGN="JUSTIFY">Bitte kontaktieren Sie für Detailfragen unsere Berater der jeweiligen Standortgesellschaft.                            </p>
+    <p ALIGN="JUSTIFY"><strong>COMFORT-City Ranking:<br></strong>Beim COMFORT-City Ranking handelt sich um ein Benchmarking der wirtschaftlichen Basis, Anziehungskraft, Leistungsstärke und Performance des Einzelhandels bzw. der Handelsimmobilien einer Innenstadt; eine sachlich fundierte Argumentationsbasis für Mieten und Kaufpreise von innerstädtischen Handelsimmobilien in Deutschland. In technischer Hinsicht handelt es sich um den gewichteten Index der maßgeblichen Eckdaten und Parameter zu Demographie und (Sozio-) Ökonomie, Einzelhandel, Standort und Handelsimmobilien. Für die wichtigsten deutschen Einkaufsstädte gehen nunmehr insgesamt 35 aktuell für jede einzelne Stadt gleichartig ermittelte und mittels eines Scoring-Modells bewertete Parameter ein, und zwar für drei große Bereiche, für die auch eigene Teilindizes errechnet werden.</p>
+    <p ALIGN="JUSTIFY">Im Einzelnen handelt es sich dabei um:</p>
+    <UL>
+      <LI>
+        <p ALIGN="JUSTIFY"><strong>Demographie/(Sozio-)Ökonomie-Ranking<br></strong>(Parameter zu Bevölkerung/Entwicklung, BIP, Beschäftigung, Arbeitslosigkeit, Tourismus, Einzelhandelskaufkraft)</p>
+    </UL>
+    <UL>
+      <LI>
+        <p ALIGN="JUSTIFY"><strong>Einzelhandels-Ranking<br></strong>(Parameter zum Einzugsgebiet: Einwohnerzahl und Nachfragevolumen,m Einzelhandelszentralität, Modezentralität, Innenstadtumsatz, -verkaufsfläche, -flächenproduktivität)</p>
+    </UL>
+    <UL>
+      <LI>
+        <p ALIGN="JUSTIFY"><strong>Standort- und Immobilien-Ranking<br></strong>(Parameter zur Miete von Klein-/ mittelgroßen Flächen, Lagen-/Flächenstruktur der Innenstadt, Branchen-/Betreibermix der Innenstadt, Mietnachfrage, Nachfrageintensität1).<BR></p>                              
+    </UL>
+    <p ALIGN="JUSTIFY">Die Gesamtattraktivität der City als Einzelhandels- und Handelsimmobilienstandort wird auf einer Skala mit insgesamt sieben Stufen gemessen. Für den Gesamtindex – passend zum Thema Shopping – dargestellt in Einkaufstüten, wobei sieben Einkaufstüten die beste Kategorie und eine die schlechteste abbilden.</p>
+  </section>
+  
+  <section *ngIf="lang=='en'">
+    <h5>Definition, Company information</h5>
+    <p ALIGN="JUSTIFY"><SPAN LANG="en-US"><strong>Number of inhabitants (absolute) up to 1.1.2016:<br></strong></SPAN><SPAN LANG="en-US">The number of inhabitants continues to be one of the most important criteria for evaluating the attractiveness of a location for the retail trade, as it plays a significant role in determining the quantitative sales potential. The greater the population of a city, the higher the purchasing power potential, and thereby the chances of achieving correspondingly high sales figures.<br></SPAN><SPAN LANG="en-US">Source: Federal Statistical Office</SPAN> <BR></p>
+    <p ALIGN="JUSTIFY"><SPAN LANG="en-US"><strong>Population development 2015–2016:<br></strong></SPAN><SPAN LANG="en-US">Equally significant is the development of the population in a given location. While some structurally weak areas are enduring significant drops in population, prospering locations are mostly developing positively. This also has a direct influence on sales opportunities for local retailers. Particularly against a backdrop of increasing disparities in population size in cities throughout Germany, this indicator is increasing in significance.<br></SPAN><SPAN LANG="en-US">Source: Federal Statistical Office</SPAN></p>
+    <p ALIGN="JUSTIFY"><SPAN LANG="en-US"><strong>Workplace employees subject to social insurance contributions up to 30.6.2015:<br></strong></SPAN><SPAN LANG="en-US">An indicator that should not be underestimated is the number of employees in a given location. It can be used to determine the town’s significance as a job location for the entire region. Not surprisingly, in locations with an above-average number of employees there is a better consumer climate for the local retail trade.<br></SPAN><SPAN LANG="en-US">Source: Federal Employment Agency</SPAN> <BR></p>
+    <p ALIGN="JUSTIFY"><SPAN LANG="en-US"><strong>Unemployment rate September 2016:<br></strong></SPAN><SPAN LANG="en-US">Along with the number of employed people and the development thereof, the unemployment rate also paints a picture of the economic and structural strength or weakness of a location. The unemployment rate is calculated on the basis of the number of unemployed people in relation to the number of employable civilians.<br></SPAN><SPAN LANG="en-US">Source: Federal Employment Agency</SPAN><BR></p>
+    <p ALIGN="JUSTIFY"><SPAN LANG="en-US"><strong>Retail purchasing power index 2016:<br></strong></SPAN><SPAN LANG="en-US">The retail purchasing power index complements the information on population size for a given location with qualitative criteria. It shows how high a location’s purchasing power potential is. The average value has been standardised nationwide at 100. A value above 100 signals that a location has above-average purchasing power potential. However, the retail purchasing power index does not provide any information as to whether the available capital is in fact spent in the location in question or not.<br></SPAN><SPAN LANG="en-US">Source: Retail Purchasing Power Index, Gfk GeoMarketing GmbH</SPAN> <BR></p>
+    <p ALIGN="JUSTIFY"><SPAN LANG="en-US"><strong>Purchase price factors and developments:<br></strong></SPAN><SPAN LANG="en-US">The purchase price factors, shown in their full range, serve as a general orientation for the currently achievable purchase price for commercial buildings (rental income from retail > 60%, current rent at around market level) with a typical sales volume in the prime location of the respective city. Technically, the purchase price factor represents the multiplier for calculating the purchase price of a commercial building without a maintenance backlog, when multiplied with the respective annual net rent. Depending on the property-specific data – e.g. tenants, rental contracts, rental volume, size, structure and condition of the building, architecture, floor plan, current rental space potential, address and other special influences – purchase price factors for actual properties can deviate significantly, up or down, from the range provided here. The current development trend is indicated with arrows. The arrow pointing upwards at a 90-degree angle shows an upward trend, the arrow pointing upwards at a slant shows a slight upward trend, the arrow pointing directly to the right shows a stable trend, the arrow pointing downwards at a slant indicates a slight downward trend and the arrow pointing downwards at a 90-degree angle indicates a downward trend.</SPAN> <BR></p>
+    <p ALIGN="JUSTIFY"><SPAN LANG="en-US"><strong>The Retail centrality 2016:<br></strong></SPAN><SPAN LANG="en-US">The retail centrality shows whether, on balance, purchasing power is flowing into or away from a particular location. A value over 100 indicates that the inflow of purchasing power from the surrounding area is higher than the outflow from the city. The retail centrality thereby sheds a special light on the attractiveness of a location for the retail trade.<br></SPAN><SPAN LANG="en-US">Source: Gfk GeoMarketing GmbH</SPAN><BR></p>
+    <p ALIGN="JUSTIFY"><SPAN LANG="en-US"><strong>Rents in prime locations:<br></strong></SPAN><SPAN LANG="en-US">Since the rent level for shops in prime locations in city centres and pedestrian zones is aligned to the sales potential in the given location, rent can be understood as one of the most important indicators for the attractiveness of a location for the retail trade. The information provided here on rents in the prime locations refers to two different shop sizes:</SPAN> <BR></p>
+    <UL>
+      <LI>
+        <p ALIGN="JUSTIFY"><SPAN LANG="en-US">80–120 m2 with 6-m shop-window length</SPAN></p>
+      <LI>
+        <p ALIGN="JUSTIFY"><SPAN LANG="en-US">300–500 m2 with 10-m shop-window length</SPAN><BR></p>                          
+    </UL>
+    <p ALIGN="JUSTIFY"><SPAN LANG="en-US"><strong>All statements pertaining to rents are to be read with the following in mind:</strong></SPAN> <BR></p>
+    <UL>
+      <LI>
+        <p ALIGN="JUSTIFY"><SPAN LANG="en-US">New rent contracts drawn up in absolutely prime business locations for fictive, purely ground floor sales areas of a small (80–120 m2) and medium (300–500 m2) size</SPAN></p>
+      <LI>
+        <p ALIGN="JUSTIFY"><SPAN LANG="en-US">The ideal shop space has ground-level, step-free access, is fitted out to a high standard and, as far as possible, its layout is at a right angle to a shop window with a minimum length of 6 m (for a size of 80–120 m2) or 10 m (for 300–500 m2).</SPAN></p>
+      <LI>
+        <p ALIGN="JUSTIFY"><SPAN LANG="en-US">Peak rents in EUR per m2, per month, plus statutory VAT and service charges</SPAN></p>
+      <LI>
+        <p ALIGN="JUSTIFY"><SPAN LANG="en-US">Development of the rental prices in per cent in the period from 2013 to 2014. The information is based on empirical figures generated by COMFORT as well as rent contracts in the respective locations that have been made known to or brokered by COMFORT or third parties. The peak rents serve as orientation, and can be applied only to certain properties, taking into account the individual characteristics of the building as well as the respective contractual agreements that, in a given case, might not conform to the norm.</SPAN><BR></p>                          
+    </UL>
+    <p ALIGN="JUSTIFY"><SPAN LANG="en-US">For more detailed information, please contact our consultants at the respective location.</SPAN><BR></p>
+    <p ALIGN="JUSTIFY"><SPAN LANG="en-US"><strong>COMFORT City Ranking:<br></strong></SPAN><SPAN LANG="en-US">The COMFORT City Ranking assesses the economic basis, power of attraction, and performance of the retail trade and retail properties in city centres. The index serves as a factually substantiated basis for negotiating rental and purchase prices of city-centre retail properties in Germany. Technically, it is a weighted index of relevant key data and parameters relating to demography and (socio-)economics, the retail trade, location and retail properties. For the most important german 60 cities a total of 35 parameters determined topically and in the same manner for each individual city are entered. Using a scoring model, the parameters cover three major areas, within which individual sub-indicators are also analysed. In detail these are as follows:</SPAN> <BR></p>
+    <UL>
+      <LI>
+        <p ALIGN="JUSTIFY"><SPAN LANG="en-US"><strong>Demography/(socio-)economic index<br>
+        </strong></SPAN><SPAN LANG="en-US">(Parameters for population/development, GDP, employment, unemployment, tourism, retail purchasing power)</SPAN></p>
+    </UL>
+    <UL>
+      <LI>
+        <p ALIGN="JUSTIFY"><SPAN LANG="en-US"><strong>Retail 	trade index<br></strong></SPAN><SPAN LANG="en-US">(Parameters for the catchment area: population size and level of demand, retail centrality, fashion centrality, as well as citycentre sales, sales areas and sales-area productivity)</SPAN></p>
+    </UL>
+    <UL>
+      <LI>
+        <p ALIGN="JUSTIFY"><SPAN LANG="en-US"><strong>Location 	and real-estate index<br></strong></SPAN><SPAN LANG="en-US">(Parameters for the rents of small/medium-sized spaces, locational/retail space structure of the city centre, industry/operator mix in the city centre, rental demand, intensity of demand1)</SPAN><BR></p>                          
+    </UL>
+    <p ALIGN="JUSTIFY"><SPAN LANG="en-US">The overall attractiveness of the city as a retail and retail-property location is measured on a scale of one to seven. The overall index is illustrated using shopping bags – as befits the subject of shopping – with seven shopping bags representing the best category and one the worst.</SPAN></p>
+  </section>
+
+  <section *ngIf="lang=='en-ch'">
+  </section>
+
+</ion-content>

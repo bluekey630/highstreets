@@ -1,0 +1,96 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+
+
+.header-ios .toolbar-ios:last-child .toolbar-background-ios{
+    border: 0px;              
+}
+ion-header.header.header::after {       
+    display: none;
+}  
+
+ion-header {
+    ion-navbar.toolbar {
+        padding: 10px !important;   
+        height: 60px;
+        min-height: 45px;          
+    }       
+
+    ion-navbar {
+        #menu-button {    
+            margin: 0px !important;            
+            background: url(../assets/img/menu.png);         
+            background-size: 100% 100% !important;
+            background-position: center center;
+            background-repeat: no-repeat;
+            border-radius: 0px !important;                
+            width: 45px !important;
+            height: 30px !important;                
+        }      
+        
+        .bar-button-menutoggle-ios {
+            top: 5px;
+        }        
+
+        .title {
+            position: relative;
+            border: 0px !important;
+            padding: 0px !important;
+            padding-right: 5px !important;
+            text-align: center;
+        }           
+
+        .toolbar-title {
+            position: relative;
+            background-color: #0a284c;
+            height: 30px;
+            padding-top: 4px;
+            color: white !important;
+        }
+
+        .toolbar-title-ios {
+            top: 5px;
+        }
+
+        .toolbar-title:before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 0px;
+            height:0px;
+            border-style: solid;
+            border-width: 12px 12px 0 0;
+            border-color:white transparent transparent transparent;
+        }           
+
+        .back-button {
+            position: absolute;
+            color: white !important; 
+            top: 16px !important;
+            height: 30px !important;
+            min-height: 30px !important;
+            z-index: 10;               
+        }
+        
+        .back-button-ios {
+            left: 20px;
+            top: 22px !important;
+        }
+    }
+}

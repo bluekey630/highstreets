@@ -1,0 +1,25 @@
+{
+    "android": {
+        "release": {
+            "keystore":"",
+            "storePassword":"",
+            "alias":"highstreets-release",
+            "password":"",
+            "keystoreType":""
+        }
+    },
+    "ios": {
+        "debug": {
+            "codeSignIdentity": "iPhone Developer: Development Appsoluts (A698YG9AQ8)",
+            "provisioningProfile": "6475fb4e-3d4c-4e0d-ad88-8f77c1d2bb53",
+            "developmentTeam": "ED4VH5E8AA",
+            "packageType": "development"
+        },
+        "release": {
+            "codeSignIdentity": "iPhone Distribution: COMFORT (ED4VH5E8AA)",
+            "provisioningProfile": "6f5dcd12-7ce1-44d2-9fb0-c9c9211018db",
+            "developmentTeam": "ED4VH5E8AA",
+            "packageType": "app-store"
+        }
+    }
+}

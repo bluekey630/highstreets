@@ -1,0 +1,50 @@
+<ion-header>
+
+  <ion-navbar color="white">
+    <ion-buttons end>
+      <button id="menu-button" ion-button menuToggle end></button>
+    </ion-buttons>
+    <ion-title>{{getLangText('title.contact')}}</ion-title>
+    
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <div class="nav-button-container">{{detailInfo.name}}</div>   
+
+  <ion-list class="address-container">
+    <p>{{detailInfo.address1}}</p>
+    <p>{{detailInfo.address2}}</p>
+  </ion-list>
+
+  <ion-list class="contact-container">
+    <p>{{getLangText('contact.label.tel-short')}}: {{detailInfo.telephone}}</p>
+    <p>{{getLangText('contact.label.fax')}}: {{detailInfo.fax}}</p>
+    <p>{{getLangText('contact.label.link.email')}}: {{detailInfo.email}}</p>
+  </ion-list>  
+  
+
+  <ion-list>
+    <ion-row tappable (click)="callIT()">
+      <ion-col col-11>{{getLangText('contact.label.link.tel')}}</ion-col>
+      <ion-col col-1><ion-icon name="arrow-forward"></ion-icon></ion-col>
+    </ion-row>
+
+    <ion-row tappable (click)="sendEmail()">
+      <ion-col col-11>{{getLangText('contact.label.link.email')}}</ion-col>
+      <ion-col col-1><ion-icon name="arrow-forward"></ion-icon></ion-col>
+    </ion-row>
+
+    <ion-row tappable (click)="goWebsite()">
+      <ion-col col-11>{{getLangText('contact.label.link.web')}}</ion-col>
+      <ion-col col-1><ion-icon name="arrow-forward"></ion-icon></ion-col>
+    </ion-row>
+
+    <ion-row tappable (click)="goMapPage()">
+      <ion-col col-11>{{getLangText('contact.button.map')}}</ion-col>
+      <ion-col col-1><ion-icon name="arrow-forward"></ion-icon></ion-col>
+    </ion-row>     
+  </ion-list>
+
+</ion-content>

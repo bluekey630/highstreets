@@ -1,0 +1,16 @@
+<ion-header>
+
+  <ion-navbar color="white">
+    <ion-buttons end>
+      <button id="menu-button" ion-button menuToggle end></button>
+    </ion-buttons>
+    <ion-title>{{getLangText('city.label.streets')}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item tappable *ngFor="let item of contentItemText" (click)="onItemClicked(item)">{{item}}</ion-item>
+  </ion-list>
+</ion-content>

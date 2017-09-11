@@ -1,0 +1,6 @@
+<div class="progress-outer">
+    <div id="progress-inner" [style.width]="progress.data.width + '%'">
+        {{progress.value}}        
+    </div>
+    <div class="other-info" *ngIf="progress.data.percentage!=''">{{progress.data.percentage}}%</div>
+</div>

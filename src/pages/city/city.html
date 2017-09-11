@@ -1,0 +1,96 @@
+<ion-header>
+    <ion-navbar color="white">
+      <ion-buttons end>
+      <button id="menu-button" ion-button menuToggle end></button>
+      </ion-buttons>
+      <ion-title>{{getLangText('title.cities')}}</ion-title>
+    </ion-navbar> 
+</ion-header>
+
+
+<ion-content>  
+  <ion-row class="button-container">
+    <ion-col col-6>
+      <button ion-button tappable color="custom-button-color" (click)="onFilterButtonClick()">{{getLangText('button.filter')}}</button><!---->
+    </ion-col>
+
+    <ion-col col-6>
+      <button ion-button tappable color="custom-button-color" (click)="onSortButtonClick()">{{sortButtonTitle}}</button>
+    </ion-col>   
+  </ion-row>
+
+  <ion-searchbar *ngIf="!filterFlag && !sortFlag" [(ngModel)]="myInput" [showCancelButton]="shouldShowCancel" (ionInput)="onInput()" [placeholder]="getLangText('filter.text')">
+  </ion-searchbar>
+  
+  <div *ngIf="alphaFlag">
+    <ion-item-group *ngFor="let group of groupedContacts">
+    
+      <ion-item-divider light>{{group.letter}}</ion-item-divider>
+      <ion-item ion-item *ngFor="let item of group.contacts">        
+        <ion-row>
+          <ion-col col-7 *ngIf="deviceName!='ipad'&&deviceName!='tablet'&&(deviceType=='portrait-primary'||deviceType=='portrait-secondary')&&device_width<375" tappable (click)="onCitiesItemClick(item)">{{ item.stadt }}</ion-col>   
+          <ion-col col-6 *ngIf="device_width>=375||deviceName=='ipad'||deviceName=='tablet'||deviceType=='landscape-primary'||deviceType=='landscape-secondary'" tappable (click)="onCitiesItemClick(item)">{{ item.stadt }}</ion-col>
+          <ion-col col-1 *ngIf="device_width>=375||deviceName=='ipad'||deviceName=='tablet'||deviceType=='landscape-primary'||deviceType=='landscape-secondary'" tappable (click)="onFavIconClicked(item)">
+            <ion-icon [name]="item.favFlag?'star':'star-outline'"></ion-icon>            
+          </ion-col>     
+          <ion-col col-5 tappable (click)="onCitiesItemClick(item)"><!--[ngStyle]="{'background': 'url(./assets/img/bag-rating-' + item.rate_index + '.png)'}"-->
+            <img height="100%" [src]="'./assets/img/bag-rating-' + item.rate_index + '.png'"/>
+          </ion-col>  
+        </ion-row>
+      </ion-item> 
+      
+    </ion-item-group>
+  </div>
+
+  <div *ngIf="!alphaFlag && !filterFlag && !sortFlag">
+    <ion-list>      
+      <ion-item ion-item *ngFor="let item of searchedCities;let i=index">        
+        <ion-row>
+            <ion-col col-7 *ngIf="deviceName!='ipad'&&deviceName!='tablet'&&(deviceType=='portrait-primary'||deviceType=='portrait-secondary')&&device_width<375" tappable (click)="onCitiesItemClick(item)">{{ i+1+". "+item.stadt }}</ion-col>   
+            <ion-col col-6 *ngIf="device_width>=375||deviceName=='ipad'||deviceName=='tablet'||deviceType=='landscape-primary'||deviceType=='landscape-secondary'" tappable (click)="onCitiesItemClick(item)">{{ i+1+". "+item.stadt }}</ion-col>
+            <ion-col col-1 *ngIf="device_width>=375||deviceName=='ipad'||deviceName=='tablet'||deviceType=='landscape-primary'||deviceType=='landscape-secondary'" tappable (click)="onFavIconClicked(item)">
+              <ion-icon [name]="item.favFlag?'star':'star-outline'"></ion-icon>
+            </ion-col>     
+            <ion-col col-5 tappable (click)="onCitiesItemClick(item)"><!--[ngStyle]="{'background': 'url(./assets/img/bag-rating-' + item.rate_index + '.png)'}"-->
+              <img height="100%" [src]="'./assets/img/bag-rating-' + item.rate_index + '.png'"/>
+            </ion-col>   
+        </ion-row>
+      </ion-item>      
+    </ion-list>
+  </div>
+
+  <div *ngIf="filterFlag">
+    <ion-list>      
+      <ion-item ion-item *ngFor="let item of filteredCities;let i=index">        
+        <ion-row>
+            <ion-col col-7 *ngIf="deviceName!='ipad'&&deviceName!='tablet'&&(deviceType=='portrait-primary'||deviceType=='portrait-secondary')&&device_width<375" tappable (click)="onCitiesItemClick(item)">{{ i+1+". "+item.stadt }}</ion-col>   
+            <ion-col col-6 *ngIf="device_width>=375||deviceName=='ipad'||deviceName=='tablet'||deviceType=='landscape-primary'||deviceType=='landscape-secondary'" tappable (click)="onCitiesItemClick(item)">{{ i+1+". "+item.stadt }}</ion-col>
+            <ion-col col-1 *ngIf="device_width>=375||deviceName=='ipad'||deviceName=='tablet'||deviceType=='landscape-primary'||deviceType=='landscape-secondary'" tappable (click)="onFavIconClicked(item)">
+              <ion-icon [name]="item.favFlag?'star':'star-outline'"></ion-icon>
+            </ion-col>     
+            <ion-col col-5 tappable (click)="onCitiesItemClick(item)"><!--[ngStyle]="{'background': 'url(./assets/img/bag-rating-' + item.rate_index + '.png)'}"-->
+              <img height="100%" [src]="'./assets/img/bag-rating-' + item.rate_index + '.png'"/>
+            </ion-col>    
+        </ion-row>
+      </ion-item>      
+    </ion-list>
+  </div>
+
+  <div *ngIf="sortFlag">
+    <ion-list>      
+      <ion-item ion-item *ngFor="let item of sortedCities;let i=index">        
+        <ion-row>
+            <ion-col col-7 *ngIf="deviceName!='ipad'&&deviceName!='tablet'&&(deviceType=='portrait-primary'||deviceType=='portrait-secondary')&&device_width<375" tappable (click)="onCitiesItemClick(item)">{{ i+1+". "+item.stadt }}</ion-col>   
+            <ion-col col-6 *ngIf="device_width>=375||deviceName=='ipad'||deviceName=='tablet'||deviceType=='landscape-primary'||deviceType=='landscape-secondary'" tappable (click)="onCitiesItemClick(item)">{{ i+1+". "+item.stadt }}</ion-col>
+            <ion-col col-1 *ngIf="device_width>=375||deviceName=='ipad'||deviceName=='tablet'||deviceType=='landscape-primary'||deviceType=='landscape-secondary'" tappable (click)="onFavIconClicked(item)">
+              <ion-icon [name]="item.favFlag?'star':'star-outline'"></ion-icon>
+            </ion-col>     
+            <ion-col col-5 tappable (click)="onCitiesItemClick(item)"><!--[ngStyle]="{'background': 'url(./assets/img/bag-rating-' + item.rate_index + '.png)'}"-->
+              <img height="100%" [src]="'./assets/img/bag-rating-' + item.rate_index + '.png'"/>
+            </ion-col>   
+        </ion-row>
+      </ion-item>      
+    </ion-list>
+  </div>
+  
+</ion-content>

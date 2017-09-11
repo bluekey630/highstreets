@@ -1,0 +1,18 @@
+<ion-header>
+
+  <ion-navbar color="white">
+    <ion-buttons end>
+      <button id="menu-button" ion-button menuToggle end></button>
+    </ion-buttons>
+    <ion-title>{{link.title}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+     <iframe *ngIf="link.id=='web'" id="embed-web" [src]="link.url | sanitizer"></iframe>    
+     <ion-scroll *ngIf="link.id=='pdf'" scrollX="true" scrollY="true"> 
+      <pdf-view [link]="link.url"></pdf-view>
+     </ion-scroll>
+</ion-content>

@@ -1,0 +1,116 @@
+page-map {
+    
+    ion-content {
+
+        .scroll-content {
+            padding: 10px !important;
+            padding-top: 0px !important;
+            margin-top: 64px;
+        }
+        ion-row.nav-button-container {            
+            // margin-top: 10px;
+            padding: 0px;  
+            margin-bottom: 5px;          
+            ion-col[col-3] {
+                padding: 0px 2px;
+            }
+            ion-col[col-3]:first-child {
+                padding-left: 0px;
+            }
+
+            ion-col[col-3]:last-child {
+                padding-right: 0px;
+            }
+
+            .button-ios {
+                border-radius: 0px;
+                margin: 0px;
+                padding: 0px;
+                width: 100%;
+                height: 30px;
+                font-size: 11px;
+            }   
+            
+            .button-md {
+                border-radius: 0px;
+                margin: 0px;
+                padding: 0px;
+                width: 100%;
+                height: 30px;
+                font-size: 11px;
+            }       
+        }
+
+        #floating-panel {
+            position: absolute;
+            top: 100px;
+            right: 5px;
+            z-index: 5;
+            background-color: #fff;
+            padding: 5px;
+            border: 1px solid #999;
+            text-align: center;
+            font-family: 'Roboto','sans-serif';
+            line-height: 30px;
+            padding-left: 10px;
+        }
+        
+        #map {
+            margin: 5px 0;            
+            width: 100%;
+            height: 94%;
+        }
+
+        #street-view {
+            margin-top: 5px;
+            width: 100%;
+            height: 94%;
+        }
+
+        pdf-view {
+            margin-top: 5px;
+        }
+
+        .gmnoprint.gm-bundled-control.gm-bundled-control-on-bottom {
+            left: 0px !important;
+        }  
+        
+        .ol-unselectable {
+            background-color: white;
+        }
+
+        ion-scroll {
+            // position: relative;
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        
+        // ion-scroll.scroll-x .scroll-content {
+        //     overflow-x: auto;
+        // }
+        
+        // ion-scroll.scroll-y .scroll-content {
+        //     overflow-y: auto;
+        // }
+        
+        // ion-scroll[center] .scroll-content {
+        //     display: flex;
+            
+        //     align-items: center;
+        //     justify-content: center;
+        // }
+        
+        ion-scroll .scroll-content {            
+            margin-top: 0px !important;
+            padding: 0 !important;
+            position: absolute;
+            
+            overflow-y: hidden;
+            overflow-x: hidden;
+            -webkit-overflow-scrolling: touch;
+            will-change: scroll-position;
+        }
+        
+    }
+}

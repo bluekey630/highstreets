@@ -1,0 +1,4 @@
+<img id="map-img" onload="let body = document.getElementById('map-img');if( body != null && body.classList != null ){body.classList.add('img-loaded');body.style.display='block'}" [src]="link" [style.width]="width_str"/>
+<ion-spinner></ion-spinner>
+<button id="plus" tappable (click)="plusButtonClicked()"><ion-icon name="ios-add-circle-outline"></ion-icon></button>
+<button id="minus" tappable (click)="minusButtonClicked()"><ion-icon name="ios-remove-circle-outline"></ion-icon></button>

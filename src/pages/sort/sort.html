@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-navbar  color="white">
+    <ion-buttons end>
+      <button id="menu-button" ion-button menuToggle end></button>
+    </ion-buttons>
+    <ion-title>{{getLangText('title.sort')}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding> 
+  <ion-list>    
+    <ion-item>
+      <ion-label>{{getLangText('option.sort.alpha')}}</ion-label>
+      <ion-checkbox [(ngModel)]="alphabetical" (click)="onItemClicked('1')"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>{{getLangText('option.sort.pop')}}</ion-label>
+      <ion-checkbox [(ngModel)]="population" (click)="onItemClicked('2')"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>{{getLangText('option.sort.popdev')}}</ion-label>
+      <ion-checkbox [(ngModel)]="population_dev" (click)="onItemClicked('3')"></ion-checkbox>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label>{{getLangText('option.sort.ins')}}</ion-label>
+      <ion-checkbox [(ngModel)]="social_ins" (click)="onItemClicked('4')"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>{{getLangText('option.sort.unemp')}}</ion-label>
+      <ion-checkbox [(ngModel)]="unemployment_rate" (click)="onItemClicked('5')"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>{{getLangText('option.sort.purch')}}</ion-label>
+      <ion-checkbox [(ngModel)]="purchasing_power" (click)="onItemClicked('6')"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>{{getLangText('option.sort.central')}}</ion-label>
+      <ion-checkbox [(ngModel)]="centrality_param" (click)="onItemClicked('7')"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>{{getLangText('option.sort.highrent')}}</ion-label>
+      <ion-checkbox [(ngModel)]="highest_rent" (click)="onItemClicked('8')"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>COMFORT City Ranking</ion-label>
+      <ion-checkbox [(ngModel)]="city_ranking" (click)="onItemClicked('9')"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+</ion-content>

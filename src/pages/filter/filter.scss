@@ -1,0 +1,89 @@
+page-filter {  
+
+    ion-content {
+
+        .scroll-content {
+            padding: 10px !important;
+            padding-top: 0px !important;
+            margin-top: 64px !important;
+        }
+
+        ion-row.nav-button-container {            
+            padding: 0px;                      
+            ion-col[col-12]:first-child {                
+                padding: 0px;
+            }
+
+            ion-col[col-6]:last-child {
+                padding-right: 0px;
+            }
+
+            button {
+                border-radius: 0px;
+                margin: 0px;
+                padding: 0px;
+                width: 100%;
+                height: 30px;
+                font-size: 14px;
+            }       
+        }
+
+        ion-list {
+            
+            .item {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            .label {
+                margin: 4px 0 0 0;
+                font-size: 14px;
+            }     
+            
+            .range {
+                padding: 0px 0px;
+                padding-top: 8px !important;
+                height: 46px;
+            }             
+
+            .range-ios .range-knob {
+                height: 16px;
+                width: 16px;
+                top: 13px;
+                left: 20px;
+                background: #c5006b !important
+            }
+               
+            .range-md .range-knob {
+                height: 24px;
+                width: 24px;
+                top: 10px;
+                background: #c5006b !important
+            }
+
+            .range-left {
+                position: absolute;
+                left: 20px;  
+                top: 10px;
+            }
+
+            .range-right {
+                position: absolute;
+                right: 20px;  
+                top: 10px;
+            }
+            
+            .range-ios .range-pin {               
+                display: none;
+            }
+
+            .range-md .range-pin {                
+                display: none;
+            }
+
+            .range-bar-active {
+                background: #c5006b !important;
+            }
+        }
+    }
+}

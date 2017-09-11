@@ -1,0 +1,38 @@
+page-favorite {
+    
+    ion-content {   
+
+        .scroll-content {
+           padding: 10px !important;
+           padding-top: 0px !important;
+           margin-top: 64px !important;
+        }
+
+        button {
+            margin: 0px !important;
+            height: 30px !important;
+        }
+
+        .fav-city-container {
+            margin-top: 10px;
+
+            ion-row {
+                background-color: #9da8b7;
+                height: 30px;
+                margin-bottom: 3px;
+
+                ion-col[col-11] {
+                    color: white;
+                    padding-left: 10px;
+                    font-weight: bold;
+                }
+
+                ion-col[col-1] {
+                    color: white;
+                    text-align: center;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

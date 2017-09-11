@@ -1,0 +1,42 @@
+<ion-header>
+
+  <ion-navbar color="white">
+    <ion-buttons end>
+      <button id="menu-button" ion-button menuToggle end></button>
+    </ion-buttons>
+    <ion-title>{{title}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-row class="nav-button-container">
+    
+    <ion-col col-3>
+      <button ion-button tappable [color]="mapID=='pdf'||mapID=='png'?'active-button-color':'custom-button-color'" (click)="selectMap('pdf')">{{getLangText('button.map.area')}}</button>
+    </ion-col> 
+
+    <ion-col col-3>
+      <button ion-button tappable [color]="mapID=='google'?'active-button-color':'custom-button-color'" (click)="selectMap('google')">{{getLangText('button.map.google')}}</button>
+    </ion-col>
+
+    <ion-col col-3>
+      <button ion-button tappable [color]="mapID=='street'?'active-button-color':'custom-button-color'" (click)="selectMap('street')">{{getLangText('button.map.streetview')}}</button>
+    </ion-col>
+
+    <ion-col col-3>
+      <button ion-button tappable [color]="mapID=='OSM'?'active-button-color':'custom-button-color'" (click)="selectMap('OSM')">{{getLangText('button.map.osm')}}</button>
+    </ion-col> 
+    
+  </ion-row>  
+
+  <div #map id="map" *ngIf="mapID=='google'||mapID=='OSM'"></div>
+  <div id="street-view" *ngIf="mapID=='street'"></div>
+  <ion-scroll scrollX="true" scrollY="true" maxZoom="10" zoom="true" overflow-scroll="false" class="scroll-view" min-zoom="1" >
+    <pdf-view *ngIf="mapID=='pdf'" [link]="link"></pdf-view>
+    <!-- <img *ngIf="mapID=='png'&&link!='undefined'&&link!=null" [src]="link" width="100%"/> -->
+    <img-view *ngIf="mapID=='png'&&link!='undefined'&&link!=null" [link]="link" (pinch)="pinchEvent($event)"></img-view>         
+  </ion-scroll>  
+  
+</ion-content>

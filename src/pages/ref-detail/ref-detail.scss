@@ -1,0 +1,56 @@
+page-ref-detail {
+    
+    ion-content {
+
+        .scroll-content {
+            padding: 10px !important;
+            padding-top: 0px !important;
+            margin-top: 64px !important;
+        }
+
+        .nav-button-container {
+            background-color: #0a284c;
+            width: 100%;
+            height: 30px;
+            font-size: 14px;             
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            padding-top:6px;
+        }
+
+        .image-container {
+            padding: 5px 0px;
+
+            img {
+                margin: 0;
+                display: none;
+            }
+
+            ion-spinner {
+                margin: 50px auto;
+                display: block;
+            }            
+
+            .img-loaded {
+                margin: 0;
+                display: block;
+            }
+            
+            .img-loaded + ion-spinner {
+                display:none;
+            }
+            
+        }        
+
+        .title-container {
+            padding: 5px 0px;
+            font-size: 16px;
+        }
+
+        .detail-container {
+            padding: 5px 0px;
+            font-size: 14px;
+        }
+    }
+}

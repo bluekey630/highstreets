@@ -1,0 +1,24 @@
+<ion-header>
+
+  <ion-navbar color="white">
+    <ion-buttons end>
+      <button id="menu-button" ion-button menuToggle end></button>
+    </ion-buttons>
+    <ion-title>{{title}}</ion-title>
+  </ion-navbar> 
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <div class="nav-button-container">{{detailInfo.title}}</div> 
+
+  <div class="image-container"> 
+    <img width="100%" id="photo" onload="let body = document.getElementById('photo');if( body != null && body.classList != null ){body.classList.add('img-loaded');body.style.display='block'}" [src]="detailInfo.detail_img"/>     
+    <ion-spinner></ion-spinner>  
+  </div>      
+  <div class="title-container"><strong>{{detailInfo.subtitle}}</strong></div> 
+  <div class="detail-container">{{detailInfo.description}}</div>  
+
+</ion-content>

@@ -1,0 +1,59 @@
+pdf-view {
+    pdf-viewer {
+        display: none;    
+    }
+
+    ion-spinner {
+        margin: 100px auto;
+        display: block;
+    }
+
+    #plus {
+        display: none; 
+        position: fixed;      
+        bottom: 56px;
+        right: 20px;
+        width: 26px;
+        height: 26px;
+        font-size: 16px;
+        padding: 0px;
+        z-index: 500;
+    }      
+    
+    #minus {
+        display: none; 
+        position: fixed;      
+        bottom: 20px;
+        right: 20px;
+        width: 26px;
+        height: 26px;
+        font-size: 16px;
+        padding: 0px;
+        z-index: 500;
+    } 
+
+    #rotate-r {
+        display: none; 
+        position: fixed;      
+        bottom: 92px;
+        right: 20px;
+        width: 26px;
+        height: 26px;
+        font-size: 16px;
+        padding: 0px;
+        z-index: 500;
+    }     
+
+    #rotate-l {
+        display: none; 
+        position: fixed;      
+        bottom: 128px;
+        right: 20px;
+        width: 26px;
+        height: 26px;
+        font-size: 16px;
+        padding: 0px;
+        z-index: 500;
+    }     
+}
+

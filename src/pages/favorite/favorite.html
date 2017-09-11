@@ -1,0 +1,22 @@
+<ion-header>
+
+  <ion-navbar color="white">
+    <ion-buttons end>
+      <button id="menu-button" ion-button menuToggle end></button>
+    </ion-buttons>
+    <ion-title>{{getLangText('button.favoerites')}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>  
+  <button ion-button tappable color="custom-button-color" (click)="onFilterButtonClick()" full>{{getLangText('fav.send.selection')}}</button>   
+
+  <ion-list class="fav-city-container">
+    <ion-row tappable *ngFor="let city of favCities" >
+      <ion-col col-11 tappable (click)="onCityButtonClick(city)">{{city.stadt}}</ion-col>
+      <ion-col col-1 tappable (click)="onStarIconClick(city)"><ion-icon name="star"></ion-icon></ion-col>
+    </ion-row>
+  </ion-list>
+</ion-content>

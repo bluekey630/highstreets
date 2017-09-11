@@ -1,0 +1,6 @@
+<pdf-viewer id="pdf-view" width="100%" [zoom]="scale" [src]="link" [page]="1" [rotation]="rotate" [original-size]="false" (after-load-complete)="callBackFn($event)"></pdf-viewer>
+<ion-spinner id="spiner"></ion-spinner>
+<button id="plus" tappable (click)="plusButtonClicked()"><ion-icon name="ios-add-circle-outline"></ion-icon></button>
+<button id="minus" tappable (click)="minusButtonClicked()"><ion-icon name="ios-remove-circle-outline"></ion-icon></button>
+<button id="rotate-r" tappable (click)="rotateRClicked()"><ion-icon name="ios-redo-outline"></ion-icon></button>
+<button id="rotate-l" tappable (click)="rotateLClicked()"><ion-icon name="ios-undo-outline"></ion-icon></button>

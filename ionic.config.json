@@ -1,0 +1,12 @@
+{
+  "name": "highstreets",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  },
+  "proxies": [{
+    "path": "/goto",
+    "proxyUrl": "http://highstreets.de/uploads/karten/"
+  }]
+}

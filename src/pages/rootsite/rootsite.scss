@@ -1,0 +1,61 @@
+page-rootsite {
+    
+    ion-content {
+
+        .scroll-content {
+            padding: 10px !important;
+            padding-top: 0px !important;
+            margin-top: 64px;
+        }       
+
+        iframe {
+            width: 100%;
+            min-height: 100%;
+            padding: 0;
+            border: 0;
+        }      
+        
+        pdf-view {
+            margin-top: 10px;
+            width: 100%;
+            min-height: 100%;
+            padding: 0;            
+        }  
+
+        ion-scroll {
+            // position: relative;
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        
+        ion-scroll.scroll-x .scroll-content {
+            overflow-x: auto;
+        }
+        
+        ion-scroll.scroll-y .scroll-content {
+            overflow-y: auto;
+        }
+        
+        // ion-scroll[center] .scroll-content {
+        //     display: flex;
+            
+        //     align-items: center;
+        //     justify-content: center;
+        // }
+        
+        ion-scroll .scroll-content {            
+            margin-top: 0px !important;
+            padding: 0 !important;
+            position: absolute;
+            
+            overflow-y: hidden;
+            overflow-x: hidden;
+            -webkit-overflow-scrolling: touch;
+            will-change: scroll-position;
+        }
+        
+        
+    }
+
+}
